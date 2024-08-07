@@ -1,0 +1,25 @@
+---
+// src/components/News.astro
+import { getCollection } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+
+const news = await getCollection('news');
+
+const sortedNews = news.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<div class="flex flex-col items-center gap-8">
+  {sortedNews.map((item) => (
+    <article class="relative w-full max-w-none border border-gray-200 rounded-lg overflow-hidden bg-white shadow-lg">
+      <img src={item.data.heroImage} alt={item.data.title} class="w-full h-auto" />
+      <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-80 p-4">
+        <h2 class="text-center text-xl font-semibold text-gray-800">{item.data.title}</h2>
+        <p class="text-center font-bold text-xs text-black-400 mt-1">
+          <FormattedDate date={item.data.pubDate} />
+        </p>
+        <p class="text-center text-sm text-gray-600 mt-2">{item.data.description}</p>
+        <a href={`/news/${item.slug}/`} class="text-blue-600 underline mt-4 block text-center">weiterlesen</a>
+      </div>
+    </article>
+  ))}
+</div>

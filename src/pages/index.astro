@@ -1,0 +1,41 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import News from '../components/News.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>	
+			<h2 class="font-bold">Willkommen beim Fachschaftsrat Informatik! 🦕</h2>
+			<p>
+				Wir sind die gewählte Vertretung der Studierenden am Institut für Informatik. 
+				Aktuelle Termine findest du <a href="/jobboard" class="text-blue-600 hover:underline">Kalender</a>. 
+				Unseren Newsletter kannst du hier abonnieren, unseren Jobverteiler für Jobangebote <a href="/jobboard" class="text-blue-600 hover:underline">hier</a>.
+			</p>
+			<p>
+				Momentan organisieren wir den Großteil unserer Kommunikation über <a href="/jobboard" class="text-blue-600 hover:underline">Telegram</a>. 
+				Auf Telegram findet ihr auch alle möglichen Gruppen zu Studiengängen und Modulen. 
+				Weiterhin gibt es noch einen <a href="/jobboard" class="text-blue-600 hover:underline">Discord</a> Server und einen Moodle Kurs. 
+				Eine Übersicht aller wichtigen Links zu diesen Gruppen findet ihr in unserem Gitlab. 
+				Um Zugang zum Gitlab zu erhalten, folgt bitte den Anweisungen auf der <a href="/jobboard" class="text-blue-600 hover:underline">Gitlab</a> Login Seite.
+			</p>
+			<p>Wir treffen uns außerdem jede Woche im Glaskasten im Augusteum (A 531). 
+				An ungeraden Kalenderwochen treffen wir uns dienstags um 15:00 Uhr; 
+				an geraden Wochen montags um 17:00 Uhr. Ihr könnt uns bei den Sitzungen 
+				immer besuchen und eure Themen mit einbringen.</p>
+			<section>
+				<h2 class="font-bold">News</h2>
+					<News /> <!-- Include the News component -->
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,41 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+
+export async function getStaticPaths() {
+	const newsItems = await getCollection('news');
+	return newsItems.map((newsItem) => ({
+		params: { slug: newsItem.slug },
+		props: newsItem,
+	}));
+}
+
+type Props = CollectionEntry<'news'>;
+
+const newsItem = Astro.props;
+const { Content } = await newsItem.render();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={newsItem.data.title} description={newsItem.data.description} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article>
+				<img src={newsItem.data.heroImage} alt={newsItem.data.title} />
+				<h1>{newsItem.data.title}</h1>
+				<p>
+					<FormattedDate date={newsItem.data.pubDate} />
+				</p>
+				<Content />
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
