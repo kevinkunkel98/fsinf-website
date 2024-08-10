@@ -2,7 +2,7 @@
 title: 'Ultimativer Ersti-Guide'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jul 01 2022'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '/assets/rathaus.jpg'
 ---
 
 Hier haben wir für dich nützliche Informationen über das Studium zusammengetragen. Darüber findet  Die Informationen, die wir dir hier zur Verfügung stellen, entsprechen unserem eigenen Wissensstand nach mehreren Semestern Studium und bestem Wissen und Gewissen. Sie stellen **keine rechtsverbindlichen Auskünfte** dar, sondern sollen dir das Studienleben ergänzen und erleichtern. Sie können – insbesondere bei Problemfällen – keinesfalls eine Studienberatung durch das Studienbüro ersetzen.
