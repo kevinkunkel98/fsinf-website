@@ -1,62 +1,74 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
-
-const heroImage = undefined; // or your logic for determining the heroImage
-
-const layoutProps = {
-  title: "Kontakt",
-  description: "Lorem ipsum dolor sit amet",
-  pubDate: new Date('August 08 2021')
-};
-
-// Only add heroImage if it is defined
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<Layout {...layoutProps}>
-<section>
-	<p>E-Mail: <a href="mailto:{fsinf@uni-leipzig.de}">fsinf@uni-leipzig.de</a>
-	Telefon: <a href="tel:+493419732297">+49 341 97 322 97</a>
-	<p>Unternehmen bitten wir von Werbe- und Kooperationsangeboten abzusehen. Da wir mit Unternehmen nicht kooperieren, bleiben diese unbeantwortet.
-	Für <strong>Jobangebote</strong> haben wir einen Mailverteiler eingerichtet. Bitte senden Sie Jobangebote direkt an: <a href="mailto:jobs@fsinf.informatik.uni-leipzig.de">jobs[at]fsinf.informatik.uni-leipzig.de</a></p>
-</section>
-
-<section>
-	<h3>FSR-Raum</h3>
-	<address>
-		Fachschaftsrat Informatik<br>
-		<strong>Raum A-541</strong><br>
-		Institut für Informatik<br>
-		Augustusplatz 10<br>
-		04109 Leipzig<br>
-	</address>
-</section>
-
-<section>
-	<h3>Post-Adresse</h3>
-	<address>
-		Universität Leipzig<br>
-		Fakultät für Mathematik und Informatik<br>
-		Fachschaftsrat Informatik<br>
-		PF 100920<br>
-		04009 Leipzig<br>
-	</address>
-	<p>Bitte bedenkt, dass Post zu uns manchmal etwas länger braucht.</p>
-</section>
-
-<section>
-	<h3>Mitglieder</h3>
-	<ul>
-		<li>Marschall, Yasmin</li>
-		<li>Speer, Florian</li>
-		<li>Schneider, Linus A.</li>
-		<li>Focke, Chloe</li>
-		<li>Daas, Erik</li>
-		<li>Wittig, Annemarie</li>
-		<li>Deubel, Christian</li>
-		<li>Bajus, Felix</li>
-		<li>Brockmann, Mats</li>
-		<li>Fehér, Nikita</li>
-		<li>Konzack, Niko</li>
-	</ul>
-</section>
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main class="container mx-auto p-4">	
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<section class="p-4 bg-white shadow-lg rounded-lg">
+					<h2 class="font-bold text-xl mb-4">Kontakt</h2>
+					<p>E-Mail: <a href="mailto:{fsinf@uni-leipzig.de}" class="text-blue-500">fsinf@uni-leipzig.de</a></p>
+					<p>Telefon: <a href="tel:+493419732297" class="text-blue-500">+49 341 97 322 97</a></p>
+					<p>Unternehmen bitten wir von Werbe- und Kooperationsangeboten abzusehen. Da wir mit Unternehmen nicht kooperieren, bleiben diese unbeantwortet.</p>
+					<p>Für <strong>Jobangebote</strong> haben wir einen Mailverteiler eingerichtet. Bitte senden Sie Jobangebote direkt an: <a href="mailto:jobs@fsinf.informatik.uni-leipzig.de" class="text-blue-500">jobs[at]fsinf.informatik.uni-leipzig.de</a></p>
+				</section>
+				
+				<section class="p-4 bg-white shadow-lg rounded-lg">
+					<h3 class="font-bold text-xl mb-4">FSR-Raum</h3>
+					<address>
+						Fachschaftsrat Informatik<br>
+						<strong>Raum A-541</strong><br>
+						Institut für Informatik<br>
+						Augustusplatz 10<br>
+						04109 Leipzig<br>
+					</address>
+				</section>
+				
+				<section class="p-4 bg-white shadow-lg rounded-lg">
+					<h3 class="font-bold text-xl mb-4">Post-Adresse</h3>
+					<address>
+						Universität Leipzig<br>
+						Fakultät für Mathematik und Informatik<br>
+						Fachschaftsrat Informatik<br>
+						PF 100920<br>
+						04009 Leipzig<br>
+					</address>
+					<p>Bitte bedenkt, dass Post zu uns manchmal etwas länger braucht.</p>
+				</section>
+				
+				<section class="p-4 bg-white shadow-lg rounded-lg">
+					<h3 class="font-bold text-xl mb-4">Mitglieder</h3>
+					<div class="flex justify-between">
+					  <!-- First List -->
+					  <ul class="list-disc list-inside">
+						<li>Speer, Florian</li>
+						<li>Marschall, Yasmin</li>
+						<li>Pauline Rotkegel</li>
+						<li>Kloß, Jil</li>
+						<li>Kunkel, Kevin</li>
+						<li>Focke, Chloe</li>
+					  </ul>
+					  <!-- Second List -->
+					  <ul class="list-disc list-inside ml-8">
+						<li>Fehér, Nikita</li>
+						<li>Gutsche, Martin</li>
+						<li>Konzack, Niko</li>
+						<li>Thun, Erik</li>
+						<li>Daas, Erik</li>
+					  </ul>
+					</div>
+				  </section>				  
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
