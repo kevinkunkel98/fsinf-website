@@ -3,15 +3,52 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header>
-	<nav>
-		<h2 class="font-bold"><a href="/">{SITE_TITLE}</a></h2	>
-		<div class="internal-links">
+<header class="dark:bg-slate-800">
+	<script>
+		const themeToggle = document.getElementById('theme-toggle');
+		const htmlElement = document.documentElement;
+	  
+		// Check if the user has a saved theme preference
+		const savedTheme = localStorage.getItem('theme');
+	  
+		if (savedTheme) {
+		  if (savedTheme === 'dark') {
+			htmlElement.classList.add('dark');
+		  } else {
+			htmlElement.classList.remove('dark');
+		  }
+		} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		  // Respect system preference for dark mode
+		  htmlElement.classList.add('dark');
+		} else {
+		  // Default to dark mode if no preference
+		  htmlElement.classList.add('dark');
+		}
+	  
+		themeToggle.addEventListener('click', () => {
+		  if (htmlElement.classList.contains('dark')) {
+			htmlElement.classList.remove('dark');
+			localStorage.setItem('theme', 'light');
+		  } else {
+			htmlElement.classList.add('dark');
+			localStorage.setItem('theme', 'dark');
+		  }
+		});
+	  </script>
+	<nav class="dark:text-white">
+		<h2 class="font-bold dark:text-white"><a href="/">{SITE_TITLE}</a></h2	>
+		<div class="internal-links dark:text-cyan-200">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Wiki</HeaderLink>
 			<HeaderLink href="/calender">Kalender</HeaderLink>
 			<HeaderLink href="/sitzungsprotokolle">Sitzungsprotokolle</HeaderLink>
 			<HeaderLink href="/contact">Kontakt</HeaderLink>
+			<button 
+			id="theme-toggle" 
+			class="dark:bg-gray-800 text-gray-800 dark:text-gray-200 p-2 rounded-full focus:outline-none"
+			aria-label="Toggle Dark Mode">
+			🌓
+		  </button>
 		</div>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">

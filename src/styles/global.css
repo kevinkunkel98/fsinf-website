@@ -30,11 +30,13 @@
 	font-display: swap;
 }
 body {
+
+	@apply bg-white text-black dark:bg-gray-900 dark:text-white;
+
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
