@@ -18,7 +18,7 @@ const sortedNews = news.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate
           <FormattedDate date={item.data.pubDate} />
         </p>
         <p class="text-center text-sm text-gray-600 mt-2 dark:text-white">{item.data.description}</p>
-        <a href={`/news/${item.slug}/`} class="text-blue-600 underline mt-4 block text-center">weiterlesen</a>
+        <a href={`/news/${item.slug}/`} class="dark:text-cyan-400 text-blue-600 underline mt-4 block text-center">weiterlesen</a>
       </div>
     </article>
   ))}
