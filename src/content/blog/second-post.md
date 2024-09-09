@@ -2,7 +2,7 @@
 title: 'Second post'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2022'
-heroImage: '/assets/news.jpg'
+heroImage: '/blog-placeholder-3.jpg'
 ---
 
 **Willkommen an alle neuen Master-Erstis! 🎓**
