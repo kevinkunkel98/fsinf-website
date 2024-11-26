@@ -1,8 +1,8 @@
 ---
 title: 'Ultimativer Ersti-Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+description: 'Alles was du als Ersti, wissen musst.'
 pubDate: 'Jul 01 2022'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '/assets/rathaus.jpg'
 ---
 
 Hier haben wir für dich nützliche Informationen über das Studium zusammengetragen. Darüber findet  Die Informationen, die wir dir hier zur Verfügung stellen, entsprechen unserem eigenen Wissensstand nach mehreren Semestern Studium und bestem Wissen und Gewissen. Sie stellen **keine rechtsverbindlichen Auskünfte** dar, sondern sollen dir das Studienleben ergänzen und erleichtern. Sie können – insbesondere bei Problemfällen – keinesfalls eine Studienberatung durch das Studienbüro ersetzen.
@@ -57,22 +57,22 @@ Falls du Fehler oder veraltete Informationen findest, kannst du Änderungen unte
 
 ## Inhaltsverzeichnis
 1. [Allgemeines](#faqAllgemein)
-2. [FSR](#faqFSR)  
-   2.1 [Was ist der FSR?](#faq2.1)  
-   2.2 [Ich habe einen Vorschlag für eine Veranstaltung](#faq2.2)  
-   2.3 [Wie kann ich bei euch mitmachen?](#faq2.3)  
+2. [FSR](#faqFSR)
+   2.1 [Was ist der FSR?](#faq2.1)
+   2.2 [Ich habe einen Vorschlag für eine Veranstaltung](#faq2.2)
+   2.3 [Wie kann ich bei euch mitmachen?](#faq2.3)
    2.4 [Warum habt ihr kein Foto von euch auf eurer Seite?](#faq2.4)
-3. [GitLab](#faqGitLab)  
-   3.1 [Was ist Git?](#faq3.1)  
-   3.2 [Wie bekomme ich Zugang zum GitLab?](#faq3.2)  
+3. [GitLab](#faqGitLab)
+   3.1 [Was ist Git?](#faq3.1)
+   3.2 [Wie bekomme ich Zugang zum GitLab?](#faq3.2)
    3.3 [Ich habe meinen Zugang vergessen](#faq3.3)
-4. [Studium](#faqStudium)  
-   4.1 [Ein Modul ist voll, aber ich muss es belegen - was soll ich machen?](#faq4.1)  
-   4.2 [Wie finde ich die Seiten der Abteilungen?](#faq4.2)  
-   4.3 [Kann ich Modul XY als Ergänzungsfach belegen?](#faq4.3)  
-   4.4 [Wie genau läuft das Modul "Externes Praktikum" im Bachelor Informatik ab?](#faq4.4)  
-   4.5 [Wie genau läuft das Bachelorseminar ab?](#faq4.5)  
-   4.6 [Was genau bedeutet es mich von einem Modul abzumelden?](#faq4.6)  
+4. [Studium](#faqStudium)
+   4.1 [Ein Modul ist voll, aber ich muss es belegen - was soll ich machen?](#faq4.1)
+   4.2 [Wie finde ich die Seiten der Abteilungen?](#faq4.2)
+   4.3 [Kann ich Modul XY als Ergänzungsfach belegen?](#faq4.3)
+   4.4 [Wie genau läuft das Modul "Externes Praktikum" im Bachelor Informatik ab?](#faq4.4)
+   4.5 [Wie genau läuft das Bachelorseminar ab?](#faq4.5)
+   4.6 [Was genau bedeutet es mich von einem Modul abzumelden?](#faq4.6)
    4.7 [Ich habe viele Prüfungen innerhalb einer kurzen Zeit, was kann ich tun?](#faq4.7)
 
 ## 1. Allgemeines <a name="faqAllgemein"></a>
@@ -162,7 +162,7 @@ Wichtig: Es handelt sich hierbei um ein freiwilliges Praktikum und nicht um ein 
 
 Das Bachelorseminar Informatik (Modulnummer 10-201-2010) ist ein Pflichtmodul im B.Sc. Informatik und B.Sc. Digital Humanities und umfasst 5 LP. Es ist nicht zu verwechseln mit den Seminarmodulen im Wahlpflichtbereich. Laut Modulbeschreibung dient das Bachelorseminar der Vorbereitung auf die Bachelorarbeit, in der Praxis läuft es aber meistens einfach parallel und dient hauptsächlich der Präsentation der Bachelorarbeit. Der genaue Ablauf ist dabei abhängig davon, bei welcher Abteilung ihr eure Arbeit schreibt. Meistens sollt ihr am Ende einen Vortrag über die Ergebnisse eurer Bachelorarbeit halten, manchmal gibt es auch zu Beginn schon eine Präsentation. Es unterscheidet sich auch zwischen den Abteilungen ob das Seminar benotet oder nur mit bestanden/nicht bestanden bewertet wird.
 
-Ihr müsst euch in den meisten Fällen nicht explizit zum Modul anmelden, eure Betreuerin kann am Ende einfach das Ergebnis dem Studienbüro mitteilen. Für manche Abteilungen ist das Bachelorseminar in TOOL aufgelistet, dann solltet ihr euch auch darüber eintragen.  
+Ihr müsst euch in den meisten Fällen nicht explizit zum Modul anmelden, eure Betreuerin kann am Ende einfach das Ergebnis dem Studienbüro mitteilen. Für manche Abteilungen ist das Bachelorseminar in TOOL aufgelistet, dann solltet ihr euch auch darüber eintragen.
 
 ### 4.6 Was genau bedeutet es mich von einem Modul abzumelden? <a name="faq4.6"></a>
 
@@ -172,14 +172,14 @@ Die Abmeldung von einem Modul kann in der Regel bis spätestens vier Wochen vor 
 
 Meldet man sich von einem Modul ab, dann gilt es als nicht belegt. Theoretisch könnt ihr in den folgenden Semestern dann keine darauf aufbauenden Module belegen, also Module die das abgemeldete Modul als Teilnahmevoraussetzung haben. Praktisch wird das an unserer Fakultät aber in den meisten Fällen nicht so eng gesehen und ihr könnt die Module trotzdem belegen. Sollten sie euch bei der Modulanmeldung nicht angezeigt werden könnt ihr im Studienbüro oder bei den jeweiligen Dozierenden nachfragen ob eine Einschreibung möglich ist.
 
-Theoretisch verfallen bei der Abmeldung von einem Modul auch die ggf. bereits erbrachten Prüfungs(vor)leistungen. Praktisch erkennen aber fast alle Dozierenden eine in einem vorherigen Semester erbrachte Prüfungs(vor)leistung an. Habt ihr also zum Beispiel in einem Modul schon mehr als die Hälfte der Punkte in den Übungsaufgaben erreicht, aber meldet euch aus gewissen Gründen noch vom Modul ab, dann müsst ihr beim erneuten Belegen des Moduls ein Jahr später in den meisten Fällen die Übungsaufgaben nicht noch einmal bearbeiten. Fragt im Zweifel aber am besten noch einmal bei den jeweiligen Dozierenden nach bevor ihr euch vom Modul abmeldet.   
+Theoretisch verfallen bei der Abmeldung von einem Modul auch die ggf. bereits erbrachten Prüfungs(vor)leistungen. Praktisch erkennen aber fast alle Dozierenden eine in einem vorherigen Semester erbrachte Prüfungs(vor)leistung an. Habt ihr also zum Beispiel in einem Modul schon mehr als die Hälfte der Punkte in den Übungsaufgaben erreicht, aber meldet euch aus gewissen Gründen noch vom Modul ab, dann müsst ihr beim erneuten Belegen des Moduls ein Jahr später in den meisten Fällen die Übungsaufgaben nicht noch einmal bearbeiten. Fragt im Zweifel aber am besten noch einmal bei den jeweiligen Dozierenden nach bevor ihr euch vom Modul abmeldet.
 
 ### 4.7 Ich habe viele Prüfungen innerhalb einer kurzen Zeit, was kann ich tun? <a name="faq4.7"></a>
 
 Wenn ihr viele Prüfungen innerhalb kurzer Zeit habt, dann könnt ihr euch unter bestimmten Umständen von einem oder mehreren der Termine abmelden. Die offiziellen Regelungen dazu findet ihr [hier](https://www.mathcs.uni-leipzig.de/fileadmin/Fakult%C3%A4t_MathInf/Reglungen_zur_Terminverschiebung_bei_Pr%C3%BCfungsh%C3%A4ufung.pdf) bzw. [hier](https://www.mathcs.uni-leipzig.de/studium/studienorganisation/pruefungsinformationen). Ergänzend dazu findet ihr im Folgenden einige Beispiele und Hinweise:
 
 - Beispiele:
-  - In einer Woche finden 3 Prüfungen statt. Prüfung A und Prüfung B finden am Montag, Prüfung C am Dienstag statt. Mit dem Verschieben einer Prüfung (z.B. Prüfung A) könnten alle Kumulationen aufgelöst werden. Es darf daher maximal eine Prüfung verschoben werden. Es kann frei gewählt werden, ob Prüfung A, B, oder C verschoben wird. Die Einschränkungen bezüglich mündlichen Prüfungen und Wiederholungsprüfungen müssen aber beachtet werden.  
+  - In einer Woche finden 3 Prüfungen statt. Prüfung A und Prüfung B finden am Montag, Prüfung C am Dienstag statt. Mit dem Verschieben einer Prüfung (z.B. Prüfung A) könnten alle Kumulationen aufgelöst werden. Es darf daher maximal eine Prüfung verschoben werden. Es kann frei gewählt werden, ob Prüfung A, B, oder C verschoben wird. Die Einschränkungen bezüglich mündlichen Prüfungen und Wiederholungsprüfungen müssen aber beachtet werden.
   - In einer Woche finden 4 Prüfungen statt. Prüfung A und Prüfung B finden am Montag, Prüfung C am Dienstag und Prüfung D am Mittwoch statt. Es müssen mindestens zwei Prüfungen verschoben werden um alle Kumulationen aufzulösen, zum Beispiel Prüfung A und D. Es dürfen daher maximal zwei Prüfungen verschoben werden. Welche zwei der vier Prüfungen verschoben werden kann frei gewählt werden. Die Einschränkungen bezüglich mündlichen Prüfungen und Wiederholungsprüfungen müssen aber beachtet werden.
 
 - Hinweise:
@@ -206,9 +206,9 @@ Wenn ihr viele Prüfungen innerhalb kurzer Zeit habt, dann könnt ihr euch unter
 >- {Prüfung B}
 >
 >
->Mit freundlichen Grüßen   
->{Vorname Nachname}   
->{Matrikelnummer}   
+>Mit freundlichen Grüßen
+>{Vorname Nachname}
+>{Matrikelnummer}
 
 ## 1. Dein Studium <a name="Studium"></a>
 ### 1.1 Universität <a name="1.1"></a>

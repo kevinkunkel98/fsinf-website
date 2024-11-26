@@ -36,8 +36,11 @@ const posts = (await getCollection('blog')).sort(
 			}
 			ul li img {
 				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
+    		border-radius: 12px;
+    		width: 100%; /* Ensures the image fills the card width */
+    		height: 280px; /* Fixed height for uniformity */
+    		object-fit: cover; /* Ensures the image is scaled/cropped to fit without stretching */
+}
 			ul li a {
 				display: block;
 			}
