@@ -10,7 +10,7 @@ const sortedNews = news.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate
 
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
   {sortedNews.map((item) => (
-    <article class="relative w-full border-4 border-gray-200 dark:border-slate-800 rounded-lg overflow-hidden bg-white dark:bg-slate-800 shadow-lg flex flex-col">
+    <article class="relative w-full border-gray-200 dark:border-slate-800 rounded-lg overflow-hidden bg-white dark:bg-slate-800 shadow-lg flex flex-col">
       <!-- Image Section -->
       <img
         src={item.data.heroImage}
