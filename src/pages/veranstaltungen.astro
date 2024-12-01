@@ -71,22 +71,5 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     </div>
 
     <Footer />
-    <script>
-      // JavaScript Functions for Modal
-      function openModal(imageSrc, caption) {
-        const modal = document.getElementById('imageModal');
-        const modalImage = document.getElementById('modalImage');
-        const modalCaption = document.getElementById('modalCaption');
-
-        modalImage.src = imageSrc;
-        modalCaption.innerText = caption;
-        modal.classList.remove('hidden');
-      }
-
-      function closeModal() {
-        const modal = document.getElementById('imageModal');
-        modal.classList.add('hidden');
-      }
-    </script>
   </body>
 </html>
