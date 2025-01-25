@@ -1,5 +1,4 @@
 ---
-// src/components/News.astro
 import { getCollection } from 'astro:content';
 import FormattedDate from './FormattedDate.astro';
 
@@ -10,32 +9,41 @@ const sortedNews = news.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate
 
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
   {sortedNews.map((item) => (
-    <article class="relative w-full border-gray-200 dark:border-slate-800 rounded-lg overflow-hidden bg-white dark:bg-slate-800 shadow-lg flex flex-col">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col">
       <!-- Image Section -->
-      <img
-        src={item.data.heroImage}
-        alt={item.data.title}
-        class="w-full h-64 object-cover"
-      />
+      <a href={`/news/${item.slug}/`}>
+        <img
+          class="rounded-t-lg w-full h-48 object-cover"
+          src={item.data.heroImage}
+          alt={item.data.title}
+        />
+      </a>
       <!-- Text Section -->
-      <div class="p-4 flex-grow">
-        <h2 class="dark:text-cyan-400 text-center text-lg font-semibold text-gray-800">
-          {item.data.title}
-        </h2>
-        <p class="text-center font-bold text-xs text-black-400 mt-1">
+      <div class="p-4 flex-grow flex flex-col justify-between">
+        <!-- Title -->
+        <a href={`/news/${item.slug}/`}>
+          <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">
+            {item.data.title}
+          </h5>
+        </a>
+        <!-- Date Section -->
+        <p class="text-center font-bold text-xs text-gray-400 dark:text-gray-300 mb-2">
           <FormattedDate date={item.data.pubDate} />
         </p>
-        <p class="text-center text-sm text-gray-600 mt-2 dark:text-white">
+        <!-- Description -->
+        <p class="mb-4 text-sm font-normal text-gray-700 dark:text-gray-400">
           {item.data.description}
         </p>
-        <a
-          href={`/news/${item.slug}/`}
-          class="dark:text-cyan-400 text-blue-600 underline mt-4 block text-center"
-        >
-          weiterlesen
-        </a>
+        <!-- Link -->
+        <div class="flex justify-center mt-auto">
+          <a
+            href={`/news/${item.slug}/`}
+            class="px-3 py-1 text-sm text-center text-white bg-blue-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            weiterlesen
+          </a>
+        </div>
       </div>
-    </article>
+    </div>
   ))}
 </div>
-
