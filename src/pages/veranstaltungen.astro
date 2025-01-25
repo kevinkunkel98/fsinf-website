@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Carousel from '../components/Carousel.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -14,6 +15,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <Header />
     <main class="py-8">
       <h1 class="dark:text-violet-400 font-bold text-center">Was wir so machen</h1>
+
+      <Carousel />
+
       <p class="text-center mt-4">
         Wir als FSR sind gewillt euch über das Studium hinweg mit einem großen Angebot an Aktivitäten und Veranstaltungen zu beglücken.
         Hier ist eine kleine Fotogalerie über unsere Events, und um zu zeigen, dass wir nicht nur Matrikelnummern sind.

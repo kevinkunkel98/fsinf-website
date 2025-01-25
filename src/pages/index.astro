@@ -4,6 +4,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import News from '../components/News.astro';
+import Accordion from '../components/Accordion.astro';
+import Carousel from '../components/Carousel.astro';
 ---
 
 <!doctype html>
@@ -40,6 +42,7 @@ import News from '../components/News.astro';
 				an geraden Wochen montags um 17:00 Uhr. Ihr könnt uns bei den Sitzungen
 				immer besuchen und eure Themen mit einbringen.</p>
 		</main>
+		<Accordion />
 		<Footer />
 	</body>
 </html>
