@@ -2,6 +2,7 @@
 title: "Demokratie an der Uni"
 description: "StuRa, FSR, etc."
 pubDate: "Jun 17 2025"
+ordinal: 5
 heroImage: "/assets/rathaus.jpg"
 ---
 

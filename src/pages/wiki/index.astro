@@ -4,10 +4,9 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('wiki')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(a, b) => a.data.ordinal - b.data.ordinal
 );
 ---
 
@@ -36,11 +35,11 @@ const posts = (await getCollection('wiki')).sort(
 			}
 			ul li img {
 				margin-bottom: 0.5rem;
-    		border-radius: 12px;
-    		width: 100%; /* Ensures the image fills the card width */
-    		height: 280px; /* Fixed height for uniformity */
-    		object-fit: cover; /* Ensures the image is scaled/cropped to fit without stretching */
-}
+				border-radius: 12px;
+				width: 100%; /* Ensures the image fills the card width */
+				height: 280px; /* Fixed height for uniformity */
+				object-fit: cover; /* Ensures the image is scaled/cropped to fit without stretching */
+			}
 			ul li a {
 				display: block;
 			}
@@ -88,9 +87,7 @@ const posts = (await getCollection('wiki')).sort(
 								<a href={`/wiki/${post.slug}/`}>
 									<img width={720} height={360} src={post.data.heroImage} alt="" />
 									<h4 class="dark:text-white">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
+									<i>{post.data.description}</i>
 								</a>
 							</li>
 						))

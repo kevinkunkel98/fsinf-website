@@ -2,6 +2,7 @@
 title: "Sonstiges"
 description: "Geld, Skills, etc."
 pubDate: "Jun 17 2025"
+ordinal: 6
 heroImage: "/assets/rathaus.jpg"
 ---
 

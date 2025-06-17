@@ -2,6 +2,7 @@
 title: "Arbeitsplätze"
 description: "Wo kann ich in der Uni selbstständig Arbeiten?"
 pubDate: "Jun 17 2025"
+ordinal: 4
 heroImage: "/assets/rathaus.jpg"
 ---
 

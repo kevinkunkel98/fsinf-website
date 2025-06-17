@@ -2,6 +2,7 @@
 title: 'Dein Studium'
 description: 'Alles was du als Ersti, wissen musst.'
 pubDate: "Jun 17 2025"
+ordinal: 2
 heroImage: '/assets/rathaus.jpg'
 ---
 

@@ -2,6 +2,7 @@
 title: "FAQ"
 description: "Antworten auf deine Fragen."
 pubDate: "Jun 17 2025"
+ordinal: 1
 heroImage: "/assets/rathaus.jpg"
 ---
 
