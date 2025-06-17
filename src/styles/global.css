@@ -81,6 +81,7 @@ h3 {
 	font-size: 1.6em;
 }
 h4 {
+	margin-top: 0.6cm;
 	font-size: 1.563em;
 }
 h5 {
@@ -128,6 +129,8 @@ code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
+	font-size: 16px;
+	font-family: 'Courier New', Courier, monospace;
 }
 pre {
 	padding: 1.5em;

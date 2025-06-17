@@ -1,16 +1,90 @@
 ---
-title: 'Technik'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-heroImage: '/assets/laptop.jpg'
+title: "Technik"
+description: "GitLab, WLAN, Uni-Mail, etc."
+pubDate: "Jun 17 2025"
+heroImage: "/assets/laptop.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+### GitLab
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Hier findest du eine [Anleitung]({{"/images/static/Gitlab-Anleitung.pdf" | relative_url}}) für das GitLab des FSR Informatik.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+#### Erreichbarkeit
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Das Git ist über deinen Browser auf https://git.fsinf.informatik.uni-leipzig.de/ erreichbar.
+Einloggen kannst du dich mit dem selben Account, mit dem du dich in den PC-Pools anmeldest. Nähere Informationen zum Informatik-Pool Account findest du unter [fakultätsinterne Arbeitsplätze](#3.).
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+#### Struktur
+
+Alle Module haben ein eigenes Repository.
+Wenn ein Modul fehlt, bei dem du gerne Material hinzufügen möchtest, dann kannst du auch diesbezüglich eine [Mail](mailto:{{ site.email }}) schreiben.
+Sämtliches Material wird nach Semester geordnet. Die Ordner der einzelnen Semester müssen “WiSeXX” oder “SoSeXX” heißen, wobei “XX” durch die entsprechende Jahreszahl, des Jahres, ersetzt werden muss, in dem das Semester angefangen hat.
+Als Unterordner kann es die Ordner “Uebungen”, “Skript” und “Klausuren" geben. Diese Bezeichnungen sprechen für sich selbst.
+
+### WLAN
+
+Die lange Anleitung zur WLAN-Einrichtung findet ihr auf den Seiten des [Universitätsrechenzentrums](https://www.urz.uni-leipzig.de/dienste/netze-zugang/wlan/), einschließlich [ausführlicher Anleitungen](https://www.urz.uni-leipzig.de/hilfe/anleitungen-a-z/wlan-einrichtung/) zu vielen Betriebssystemen.
+Kurz gefasst: Access Point eduroam, DHCP, WPA & WPA2 Enterprise, TTLS, PAP, anonymous, mai12xyz@studserv.uni-leipzig.de + euer Studserv-Passwort und ihr braucht [dieses Zertifikat](https://pki.pca.dfn.de/unilei-ca/pub/cacert/rootcert.crt).
+
+Du nutzt Linux und keinen Network Manager und willst weiterhin netctl verwenden, um dich mit eduroam zu verbinden?
+
+Das Profil unten läuft, wenn man die groß geschriebenen Konstanten INTERFACE, USER und PASSWORD entsprechend ändert.
+Das T-Telesec GlobalRoot Class 2 Zertifikat sollte standardmäßig schon vorinstalliert sein.
+
+    Description='A wireless connection to the eduroam network provided by
+    the Leipzig University.'
+    Interface=INTERFACE
+    Connection=wireless
+    Security='wpa-configsection'
+    IP=dhcp
+    ESSID=eduroam
+    WPAConfigSection=(
+        'ssid="eduroam"'
+        'key_mgmt=WPA-EAP'
+        'eap=TTLS'
+        'phase2="auth=PAP"'
+        'ca_cert="/etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem"'
+        'altsubject_match="DNS:radius.uni-leipzig.de"'
+        'identity="USER@uni-leipzig.de"'
+        'anonymous_identity="eduroam@uni-leipzig.de"'
+        'password="PASSWORD"'
+    )
+
+### Uni E-Mail / StudServ
+
+Die Uni Leipzig stellt euch für die Zeit eures Studiums eine eigene Mailadresse mit 300 MB Speicher zur Verfügung. Die eMail-Adresse lautet mai12xyz@studserv.uni-leipzig.de.
+Auch wenn ihr diese Adresse nicht aktiv nutzt, werden dorthin z.B. offizielle Nachrichten der Universitätsverwaltung, der Unibibliothek oder des StuRa geschickt.
+
+Die Webmail-Oberfläche befindet sich unter [mail.uni-leipzig.de](https://mail.uni-leipzig.de/portal/imp/login.php?server=studserv). Die Login-Daten sind die üblichen (mai12xyz + Passwort). Dort habt ihr die Möglichkeit, euch einen personalisierten Mail-Alias (z.B. Vorname.Nachname@studserv.uni-leipzig.de) einzurichten. Außerdem kann eine Weiterleitung an eine andere eMail-Adresse konfiguriert werden.
+
+Es ist auch möglich sich einen Alias einzurichten. zB mustermensch@studserv.uni-leipzig.de .
+
+Hinweise zur Nutzung des studserv via POP, IMAP und SMTP gibt es [ebenfalls beim URZ](https://www.urz.uni-leipzig.de/studserv.html).
+
+### Hardwarekauf und Lizenzen
+
+Uns erreichen regelmäßig Anfragen zum Hardwarekauf und zu Lizenzerwerb. Wir können dazu ein paar Ratschläge geben.
+
+#### Gebrauchte Hardware
+
+Gebrauchte Hardware zu kaufen ist nicht nur umweltbewusst, sondern genügt in den meisten Fällen den Ansprüchen fürs Studium bei weitem. Dass bei Privatkäufen ein gewisses Risiko besteht, ist verständlich. Für alle, die auf Nummer sicher gehen wollen, gibt es zahlreiche seriöse Anbieter im Internet, die generalüberholte Geräte inkl. einjähriger Garantie vertreiben.
+
+#### Neue Rechner und Hardware
+
+Solltest Du dennoch einen neuen Rechner oder Hardware für Dein Studium anschaffen, informierst Du dich am besten über Sonderangebote für Studierende. Die meisten Hersteller haben spezielle Campusprogramme und stellen oftmals sogar Sondereditionen und -baureihen her. In jedem Fall lohnt es sich, beim Erwerb auf eine Betriebssystemslizenz und zusätzliche Software ab Werk zu verzichten. Näheres erfährst Du dazu im nächsten Absatz.
+
+#### Betriebssystem und Lizenzen
+
+Wir empfehlen Dir, Dich während des Studiums mit freien Betriebssystemen, zum Beispiel [Linux-Derivaten](https://de.wikipedia.org/wiki/Liste_von_Linux-Distributionen), auseinander zu setzen und diese zu benutzen.
+
+https://azureforeducation.microsoft.com/devtools
+
+Solltest Du dennoch Microsoft-Lizenzen, zum Beispiel Windows 10, benötigen, kannst du diese kostenfrei über [Microsoft Azure](https://azureforeducation.microsoft.com/devtools) erhalten. Dort kannst du dich einfach anmelden und musst nur deine Uni-Mailadresse bestätigen. Wichtig ist, dass eine kommerzielle Nutzung der Software unzulässig ist.
+
+Das Office-Paket erhälst du über [Campus Sachsen](https://campussachsen.tu-dresden.de/). Du musst dich lediglich alle 180 Tage dort einloggen, damit deine Lizenz nicht verfällt.
+
+#### Sonstiges
+
+Empfehlenswert sind Businessmodelle, da diese in der Regel eine bessere Qualität und manchmal auch eine längere Garantie aufweisen.
+
+Anschaffungen fürs Studium sind unter Umständen steuerlich absetzbar.
