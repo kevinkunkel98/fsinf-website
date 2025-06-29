@@ -1,120 +1,202 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
-<header class="dark:bg-slate-800">
-	<header class="dark:bg-slate-800">
-		<script>
-		  const themeToggle = document.getElementById('theme-toggle');
-		  const htmlElement = document.documentElement;
+<header class="lg:bg-gray-50 lg:dark:bg-slate-800 inset-x-0 top-0 z-50">
+  <nav class="justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="flex lg:hidden">
+      <button
+        type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+        id="mobile-navbar-open-btn"
+      >
+        <span class="sr-only">Öffne Menu</span>
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex text-left">
+      <a class="font-semibold dark:text-white text-m" href="/">{SITE_TITLE}</a>
+    </div>
+    <div class="hidden lg:flex flex-row gap-x-12">
+      <div class="internal-links dark:text-cyan-200">
+        <HeaderLink href="/wiki">Wiki</HeaderLink>
+        <HeaderLink href="/calender">Kalender</HeaderLink>
+        <HeaderLink href="/mitglieder">Mitglieder</HeaderLink>
+        <HeaderLink href="/veranstaltungen">Veranstaltungen</HeaderLink>
+        <HeaderLink href="/contact">Kontakt</HeaderLink>
+        <button
+          id="theme-toggle"
+          class="dark:bg-gray-800 text-gray-800 dark:text-gray-200 p-2 rounded-full focus:outline-none"
+          aria-label="Toggle Dark Mode"
+        >
+          🌓
+        </button>
+      </div>
+    </div>
+    <div class="hidden lg:flex flex-row justify-end">
+      <div class="flex">
+        <a href="https://t.me/fsinfLeipzig" target="_blank">
+          <span class="sr-only">Telegram</span>
+          <img
+            src="/assets/telegram.svg"
+            alt="Telegram"
+            width="32"
+            height="32"
+            aria-hidden="true"
+          />
+        </a>
+        <a href="https://www.instagram.com/fsinf_leipzig/" target="_blank">
+          <span class="sr-only">Fsinf Insta</span>
+          <img
+            src="/assets/insta.svg"
+            alt="Instagram"
+            width="32"
+            height="32"
+            aria-hidden="true"
+          />
+        </a>
+        <a href="https://discord.com/invite/kprYzcKpvk" target="_blank">
+          <span class="sr-only">Fsinf Discord</span>
+          <img
+            src="/assets/discord.svg"
+            alt="Discord"
+            width="32"
+            height="32"
+            aria-hidden="true"
+          />
+        </a>
+        <a href="https://git.fsinf.informatik.uni-leipzig.de/" target="_blank">
+          <span class="sr-only">Fsinf GitLab repo</span>
+          <img
+            src="/assets/gitlab.svg"
+            alt="GitLab"
+            width="32"
+            height="32"
+            aria-hidden="true"
+          />
+        </a>
+      </div>
+    </div>
+  </nav>
 
-		  // Check if the user has a saved theme preference
-		  const savedTheme = localStorage.getItem('theme');
-
-		  if (savedTheme) {
-			if (savedTheme === 'dark') {
-			  htmlElement.classList.add('dark');
-			} else {
-			  htmlElement.classList.remove('dark');
-			}
-		  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			// Respect system preference for dark mode
-			htmlElement.classList.add('dark');
-		  } else {
-			// Default to dark mode if no preference
-			htmlElement.classList.add('dark');
-		  }
-
-		  if (themeToggle) {
-			themeToggle.addEventListener('click', () => {
-			  if (htmlElement.classList.contains('dark')) {
-				htmlElement.classList.remove('dark');
-				localStorage.setItem('theme', 'light');
-			  } else {
-				htmlElement.classList.add('dark');
-				localStorage.setItem('theme', 'dark');
-			  }
-			});
-		  } else {
-			console.warn('Theme toggle button not found.');
-		  }
-		</script>
-	  </header>
-
-	<nav class="dark:text-white">
-		<h2 class="font-bold dark:text-white"><a href="/">{SITE_TITLE}</a></h2	>
-		<div class="internal-links dark:text-cyan-200">
-			<HeaderLink href="/wiki">Wiki</HeaderLink>
-			<HeaderLink href="/calender">Kalender</HeaderLink>
-			<HeaderLink href="/mitglieder">Mitglieder</HeaderLink>
-			<HeaderLink href="/veranstaltungen">Veranstaltungen</HeaderLink>
-			<HeaderLink href="/contact">Kontakt</HeaderLink>
-			<button
-			id="theme-toggle"
-			class="dark:bg-gray-800 text-gray-800 dark:text-gray-200 p-2 rounded-full focus:outline-none"
-			aria-label="Toggle Dark Mode">
-			🌓
-		  </button>
-		</div>
-		<div class="social-links">
-			<a href="https://t.me/fsinfLeipzig" target="_blank">
-				<span class="sr-only">Telegram</span>
-				<img src="/assets/telegram.svg" alt="Telegram" width="32" height="32" aria-hidden="true">
-			  </a>
-			  <a href="https://www.instagram.com/fsinf_leipzig/" target="_blank">
-				<span class="sr-only">Fsinf Insta</span>
-				<img src="/assets/insta.svg" alt="Instagram" width="32" height="32" aria-hidden="true">
-			  </a>
-			  <a href="https://discord.com/invite/kprYzcKpvk" target="_blank">
-				<span class="sr-only">Fsinf Discord</span>
-				<img src="/assets/discord.svg" alt="Discord" width="32" height="32" aria-hidden="true">
-			  </a>
-			  <a href="https://git.fsinf.informatik.uni-leipzig.de/" target="_blank">
-				<span class="sr-only">Fsinf GitLab repo</span>
-				<img src="/assets/gitlab.svg" alt="GitLab" width="32" height="32" aria-hidden="true">
-			 </a>
-		</div>
-	</nav>
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div
+    class="hidden"
+    role="dialog"
+    aria-modal="true"
+    id="mobile-navbar-overlay"
+  >
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-50"></div>
+    <div
+      class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 bg-gray-50 dark:bg-gray-900 sm:max-w-sm sm:ring-1 sm:ring-white/10"
+    >
+      <div class="flex items-center justify-between">
+        <button
+          type="button"
+          class="-m-2.5 rounded-md p-2.5 text-gray-400"
+          id="mobile-navbar-close-btn"
+        >
+          <span class="sr-only">Schließe Menu</span>
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/25">
+          <div class="space-y-2 py-4">
+            <a
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
+              href="/wiki">Wiki</a
+            >
+            <a
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
+              href="/calender">Kalender</a
+            >
+            <a
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
+              href="/mitglieder">Mitglieder</a
+            >
+            <a
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
+              href="/veranstaltungen">Veranstaltungen</a
+            >
+            <a
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
+              href="/contact">Kontakt</a
+            >
+          </div>
+          <div class="py-4 grid grid-cols-4 gap-4">
+            <a href="https://t.me/fsinfLeipzig" target="_blank">
+              <span class="sr-only">Telegram</span>
+              <img
+                src="/assets/telegram.svg"
+                alt="Telegram"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </a>
+            <a href="https://www.instagram.com/fsinf_leipzig/" target="_blank">
+              <span class="sr-only">Fsinf Insta</span>
+              <img
+                src="/assets/insta.svg"
+                alt="Instagram"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </a>
+            <a href="https://discord.com/invite/kprYzcKpvk" target="_blank">
+              <span class="sr-only">Fsinf Discord</span>
+              <img
+                src="/assets/discord.svg"
+                alt="Discord"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </a>
+            <a
+              href="https://git.fsinf.informatik.uni-leipzig.de/"
+              target="_blank"
+            >
+              <span class="sr-only">Fsinf GitLab repo</span>
+              <img
+                src="/assets/gitlab.svg"
+                alt="GitLab"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
-</style>
