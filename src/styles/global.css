@@ -50,31 +50,38 @@ main {
 	margin: auto;
 	padding: 2em 1em;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font: bold;
+
+[class="light"] {
+	h1, h2, h3, h4, h5, h6 {
+		color: rgb(var(--black));
+	}
+}
+[class="dark"] {
+	h1, h2, h3, h4, h5, h6 {
+		color: rgb(white);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
 	line-height: 1.2;
 }
-h1 {
+h1, h2, h3, h4 {
 	font: bold;
+}
+h1 {
 	font-size: 3.052em;
 }
 h2 {
-	font:bold;
-	font-size: 2.341em;
+	margin-top: 1cm;
+	font-size: 2.4em;
 }
 h3 {
-	font: bold;
-	font-size: 1.953em;
+	margin-top: 0.8cm;
+	font-size: 1.6em;
 }
 h4 {
-	font: bold;
+	margin-top: 0.6cm;
 	font-size: 1.563em;
 }
 h5 {
@@ -91,10 +98,18 @@ a:hover {
 	color: var(--accent);
 }
 p {
-	margin-bottom: 1em;
+	margin-top: 0.5cm;
 }
-.prose p {
-	margin-bottom: 2em;
+ul, ol {
+	margin: 0px 0px 0px 15px;
+	padding: 0px 0px 0px 15px;
+	list-style-position: outside;
+}
+ul {
+	list-style-type: circle;
+}
+ol {
+	list-style-type: unset;
 }
 textarea {
 	width: 100%;
@@ -114,6 +129,8 @@ code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
+	font-size: 16px;
+	font-family: 'Courier New', Courier, monospace;
 }
 pre {
 	padding: 1.5em;
@@ -126,7 +143,9 @@ blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
 	margin: 0px;
-	font-size: 1.333em;
+	font-size: 18px;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: justify;
 }
 hr {
 	border: none;
