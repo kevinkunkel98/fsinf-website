@@ -4,31 +4,6 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-:root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
-}
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
 body {
 	@apply bg-white text-black dark:bg-gray-900 dark:text-white;
 
@@ -42,25 +17,15 @@ body {
 	color: rgb(var(--gray-dark));
 }
 
-[class="light"] {
-	h1, h2, h3, h4, h5, h6 {
-		color: rgb(var(--black));
-	}
-
-	a, a:hover {
-		@apply text-blue-600;
-	}
+h1, h2 {
+	@apply text-black dark:text-violet-400 font-bold text-center;
 }
-[class="dark"] {
-	h1, h2, h3, h4, h5, h6 {
-		color: rgb(white);
-	}
-
-	a, a:hover {
-		@apply text-cyan-400;
-	}
+h3, h4, h5, h6 {
+	@apply text-black dark:text-white
 }
-
+a, a:hover {
+	@apply text-blue-600 dark:text-cyan-400 font-semibold;
+}
 a:hover {
 	text-decoration: underline;
 }
