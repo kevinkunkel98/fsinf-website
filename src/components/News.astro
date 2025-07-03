@@ -4,10 +4,12 @@ import FormattedDate from './FormattedDate.astro';
 
 const news = await getCollection('news');
 
-const sortedNews = news.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+// Sort news after date and then limit them to 3. We don't want to show more then
+// the last 3 most recent posts on the front page.
+const sortedNews = news.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 3);
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center w-full align-middle">
   {sortedNews.map((item) => (
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col">
       <!-- Image Section -->
@@ -22,7 +24,7 @@ const sortedNews = news.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate
       <div class="p-4 flex-grow flex flex-col justify-between">
         <!-- Title -->
         <a href={`/news/${item.slug}/`}>
-          <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 class="mb-2 font-bold text-lg tracking-tight text-gray-900 dark:text-white">
             {item.data.title}
           </h5>
         </a>
@@ -31,14 +33,14 @@ const sortedNews = news.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate
           <FormattedDate date={item.data.pubDate} />
         </p>
         <!-- Description -->
-        <p class="mb-4 text-sm font-normal text-gray-700 dark:text-gray-400">
+        <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-100">
           {item.data.description}
         </p>
         <!-- Link -->
         <div class="flex justify-center mt-auto">
           <a
             href={`/news/${item.slug}/`}
-            class="px-3 py-1 text-sm text-center text-white bg-blue-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="px-3 py-1 text-sm text-center text-white bg-blue-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:text-gray-100 dark:hover:text-gray-100 dark:bg-blue-600 dark:hover:bg-blue-600 dark:focus:ring-blue-400"
           >
             weiterlesen
           </a>
