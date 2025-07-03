@@ -14,85 +14,26 @@ const posts = (await getCollection('wiki')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-				width: 100%; /* Ensures the image fills the card width */
-				height: 280px; /* Fixed height for uniformity */
-				object-fit: cover; /* Ensures the image is scaled/cropped to fit without stretching */
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/wiki/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="dark:text-white">{post.data.title}</h4>
-									<i>{post.data.description}</i>
-								</a>
-							</li>
-						))
-					}
-				</ul>
+			<section class="w-full">
+				<div class="grid grid-flow-row grid-cols-1 sm:grid-cols-2 transition-shadow gap-5 gap-y-6 justify-center">
+					{posts.map((post) => (
+						<div class="bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-md sm:rounded-lg lg:rounded-xl transition duration-500 hover:scale-105 hover:z-50">
+						<a class="hover:no-underline" href={`/wiki/${post.slug}/`}>
+							<!-- Cover image -->
+							<img class="m-0 p-0 w-full h-[300px] max-h-[300px] rounded-md sm:rounded-lg lg:rounded-xl object-cover" width={720} height={300} src={post.data.heroImage} alt="" />
+							<div class="p-2 pb-4">
+								<!-- Title and description -->
+								<h3 class="m-0 p-0 text-black dark:text-white">{post.data.title}</h3>
+								<i>{post.data.description}</i>
+							</div>
+						</a>
+						</div>
+					))}
+				</div>
 			</section>
 		</main>
 		<Footer />
