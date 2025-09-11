@@ -11,7 +11,7 @@ const posts = (await getCollection('wiki')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
@@ -21,13 +21,13 @@ const posts = (await getCollection('wiki')).sort(
 			<section class="w-full">
 				<div class="grid grid-flow-row grid-cols-1 sm:grid-cols-2 transition-shadow gap-5 gap-y-6 justify-center">
 					{posts.map((post) => (
-						<div class="bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-md sm:rounded-lg lg:rounded-xl transition duration-500 hover:scale-105 hover:z-50">
+						<div class="bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700 border-solid border-2 rounded-3xl">
 						<a class="hover:no-underline" href={`/wiki/${post.slug}/`}>
 							<!-- Cover image -->
-							<img class="m-0 p-0 w-full h-[300px] max-h-[300px] rounded-md sm:rounded-lg lg:rounded-xl object-cover" width={720} height={300} src={post.data.heroImage} alt="" />
+							<img class="m-0 p-0 w-full h-[300px] max-h-[300px] rounded-2xl rounded-b-none" width={720} height={300} src={post.data.heroImage} alt="" />
 							<div class="p-2 pb-4">
 								<!-- Title and description -->
-								<h3 class="m-0 p-0 text-black dark:text-white">{post.data.title}</h3>
+								<h3 class="m-0 p-0">{post.data.title}</h3>
 								<i>{post.data.description}</i>
 							</div>
 						</a>

@@ -12,72 +12,45 @@ const newsItems = (await getCollection('news')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<BaseHead title={`News - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-				margin: 0 auto;
-				padding: 1em;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: 100%;
-				border: 1px solid #e5e7eb;
-				border-radius: 0.5rem;
-				overflow: hidden;
-				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-			}
-			ul li img {
-				width: 100%;
-				height: auto;
-			}
-			ul li div {
-				padding: 1rem;
-				background: white;
-			}
-			ul li h4 {
-				margin: 0;
-				font-size: 1.5rem;
-				color: #333;
-			}
-			ul li p {
-				margin: 0.5rem 0;
-				font-size: 0.875rem;
-				color: #555;
-			}
-			ul li a {
-				display: block;
-				margin-top: 1rem;
-				color: #3b82f6;
-				text-decoration: none;
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main class="w-100 md:w-5/6 lg:w-[960px] m-auto p-4">
 			<section>
 				<h1>News</h1>
-				<ul>
+				<ul class="grid grid-flow-row grid-cols-1 sm:grid-cols-2 gap-8 list-none m-0 p-0 w-full h-auto justify-center">
 					{newsItems.map((newsItem) => (
-						<li>
-							<img src={newsItem.data.heroImage} alt={newsItem.data.title} />
-							<div>
-								<h4>{newsItem.data.title}</h4>
-								<p>
-									<FormattedDate date={newsItem.data.pubDate} />
-								</p>
+						<li class="bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700 border-solid border-2 w-full h-auto rounded-3xl">
+							<!-- Image Section -->
+							<img
+								src={newsItem.data.heroImage}
+								alt={newsItem.data.title}
+								class="m-0 p-0 w-full h-48 rounded-2xl rounded-b-none object-cover"
+								width="100%"
+							/>
+      						<!-- Text Section -->
+							<div class="p-4 flex-grow flex flex-col justify-between">
+								<div class="flex flex-col w-full justify-between">
+									<!-- Title and date -->
+									<h4 class="m-0 p-0 text-center font-bold tracking-tight">{newsItem.data.title}</h4>
+									<p class="m-0 p-0 text-center font-bold">
+										<FormattedDate date={newsItem.data.pubDate} />
+									</p>
+								</div>
+								<!-- Content -->
 								<p>{newsItem.data.description}</p>
-								<a href={`/news/${newsItem.slug}/`}>Weiterlesen</a>
+								<!-- Link -->
+								<div class="flex justify-center mt-auto">
+									<a
+										href={`/news/${newsItem.slug}/`}
+										class="px-3 py-1 text-sm text-center text-white dark:text-gray-100 bg-blue-500 dark:bg-blue-600 rounded-lg focus:ring-4 focus:outline-none focus:text-gray-200 dark:focus:ring-gray-400"
+									>
+										weiterlesen
+									</a>
+								</div>
 							</div>
 						</li>
 					))}

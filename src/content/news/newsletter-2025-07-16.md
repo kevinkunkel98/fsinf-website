@@ -2,7 +2,7 @@
 title: "Newsletter"
 pubDate: 2025-07-16
 heroImage: "/assets/election.png"
-description: "Wenn ihr euch gerade überlegt, welche Wahlmodule ihr nächstes Semester belegen möchtet, könnt ihr euch auf den Task-Cards, die wir letztes Semester eingeführt haben, vielleicht ein paar Infos holen..."
+description: "Die endgültigen Ergebnisse der FSR Wahlen wurden veröffentlicht. Die genauen Ergebnisse findet ihr auf der Website des Stura. Wir freuen uns sehr, das alle, die bisher schon aktiv im FSR waren und sich aufgestellt haben, auch gewählt wurden."
 ---
 
 ## Newsletter 🗞
