@@ -1,51 +1,37 @@
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
-import interactionPlugin from "@fullcalendar/interaction" // needed for dayClick
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
+import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClick
 import listPlugin from '@fullcalendar/list';
-import events from "./Events.json"
-
-const NAMES = [
-  "Januar",
-  "Februar",
-  "März",
-  "April",
-  "Juni",
-  "Juli",
-  "Mai",
-  "August",
-  "September",
-  "Oktober",
-  "November",
-  "Dezember"
-]
+import deLocale from '@fullcalendar/core/locales/de';
+import events from "./Events.json";
 
 const pad_digit = (num) => {
   if (num < 10) return "0" + num;
-  return num
+  return num;
 }
 
 const day_month_year = (date) => {
-  return pad_digit(date.getDate()) + "." + pad_digit(date.getMonth()+1) + "." + date.getFullYear()
+  return pad_digit(date.getDate()) + "." + pad_digit(date.getMonth()+1) + "." + date.getFullYear();
 }
 
 const hour_minute = (date) => {
-  return pad_digit(date.getHours()) + ":" + pad_digit(date.getMinutes())
+  return pad_digit(date.getHours()) + ":" + pad_digit(date.getMinutes());
 }
 
 const timeline = (event) => {
   let builder = day_month_year(event.start);
   if (event.allDay) {
     if (event.end && event.start.getDate() != event.end.getDate()) {
-      builder += " - "
+      builder += " - ";
       builder += day_month_year(event.end);
     }
-    builder += " ganztägig"
+    builder += " ganztägig";
   } else {
-    builder += " " + hour_minute(event.start)
+    builder += " " + hour_minute(event.start);
     if (event.end) {
-      builder += " - "
-      if (event.start.getDate() != event.end.getDate()) builder += day_month_year(event.end) + " "
-      builder += hour_minute(event.end)
+      builder += " - ";
+      if (event.start.getDate() != event.end.getDate()) builder += day_month_year(event.end) + " ";
+      builder += hour_minute(event.end);
     }
   }
   return builder;
@@ -69,16 +55,12 @@ export default function Calendar() {
       description.innerText = info.event.extendedProps.description;
     } else description.innerText = "";
   }
-
-  const handleTitleFormat = (info) => {
-    return NAMES[info.date.month]
-  }
-
+  
   return (
     <FullCalendar
       plugins={[ dayGridPlugin, listPlugin, interactionPlugin ]}
       eventClick={handleEventClick}
-      titleFormat={handleTitleFormat}
+      locale={deLocale}
       editable={false}
       selectable={true}
       selectMirror={false}
@@ -86,5 +68,5 @@ export default function Calendar() {
       initialEvents={events}
       nextDayThreshold={'06:00:00'}
     />
-  )
+  );
 }
