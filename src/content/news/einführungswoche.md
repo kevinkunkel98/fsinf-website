@@ -3,10 +3,9 @@ title: "Einführungswochen April 2024"
 pubDate: 2024-08-01
 heroImage: "/assets/neddeleude.png"
 description: "Herzlichen Glückwunsch zum Beginn eures Masterstudiums in Informatik, Data Science und Digital Humanities! Als Fachschaftsrat möchten wir euch dabei unterstützen, euch bestmöglich in euer Studium einzuleben."
-slug: "breaking-news-example-article-1"
 ---
 
-**Willkommen an alle neuen Master-Erstis! 🎓**
+## Willkommen an alle neuen Master-Erstis! 🎓
 
 Herzlichen Glückwunsch zum Beginn eures Masterstudiums in Informatik, Data Science und Digital Humanities! Als Fachschaftsrat möchten wir euch dabei unterstützen, euch bestmöglich in euer Studium einzuleben. Wir haben einige spannende Aktivitäten für euch geplant, um euch den Einstieg zu erleichtern und euch die Gelegenheit zu geben, eure Kommiliton*innen kennenzulernen:
 
