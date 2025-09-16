@@ -3,7 +3,7 @@ title: "Sonstiges"
 description: "Geld, Skills, etc."
 pubDate: "Jun 17 2025"
 ordinal: 6
-heroImage: "/assets/rathaus.jpg"
+heroImage: "/assets/wiki/rathaus.jpg"
 ---
 
 ### Geld haben und verdienen

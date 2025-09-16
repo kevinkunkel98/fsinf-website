@@ -1,7 +1,7 @@
 ---
 title: "Schießung des Campus Augustusplatz und Stadtradeln"
 pubDate: 2025-08-26
-heroImage: "/assets/election.png"
+heroImage: "/assets/news/election.png"
 description: "Der Campus Augustusplatz bleibt in der Zeit von 01.-14.09. geschlossen, inklusive der Fahrradparker."
 ---
 

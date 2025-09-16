@@ -1,6 +1,6 @@
 # FSR Informatik Website
 
-![FSR Informatik](public/assets/fsinf-image.png)
+![FSR Informatik](images/fsinf-image.png)
 
 ## Technologies
 

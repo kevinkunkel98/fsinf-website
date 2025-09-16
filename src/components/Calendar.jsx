@@ -37,7 +37,7 @@ const timeline = (event) => {
   return builder;
 }
 
-export default function FullCalendar() {
+export default function CalendarConf() {
   const handleEventClick = (info) => {
     info.jsEvent.preventDefault();
 

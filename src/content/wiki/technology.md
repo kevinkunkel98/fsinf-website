@@ -3,7 +3,7 @@ title: "Technik"
 description: "GitLab, WLAN, Uni-Mail, etc."
 pubDate: "Jun 17 2025"
 ordinal: 3
-heroImage: "/assets/laptop.jpg"
+heroImage: "/assets/wiki/laptop.jpg"
 ---
 
 ### GitLab
