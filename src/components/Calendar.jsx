@@ -37,7 +37,7 @@ const timeline = (event) => {
   return builder;
 }
 
-export default function Calendar() {
+export default function CalendarConf() {
   const handleEventClick = (info) => {
     info.jsEvent.preventDefault();
 
@@ -52,7 +52,8 @@ export default function Calendar() {
 
     var description = document.getElementById('popup-description');
     if (info.event.extendedProps.description != undefined) {
-      description.innerText = info.event.extendedProps.description;
+      // Allow HTML in description
+      description.innerHTML = info.event.extendedProps.description;
     } else description.innerText = "";
   }
   

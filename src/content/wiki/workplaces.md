@@ -3,7 +3,7 @@ title: "Arbeitsplätze"
 description: "Wo kann ich in der Uni selbstständig Arbeiten?"
 pubDate: "Jun 17 2025"
 ordinal: 4
-heroImage: "/assets/rathaus.jpg"
+heroImage: "/assets/wiki/rathaus.jpg"
 ---
 
 Als Studierende der Fakultät für Mathematik und Informatik habt ihr das Glück am sehr schönen Hauptcampus zu studieren. Viele Arbeitsplätze sorgen für eine angenehme Arbeitsatmosphäre.

@@ -20,7 +20,7 @@ const { Content } = await newsItem.render();
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<BaseHead title={newsItem.data.title} description={newsItem.data.description} />
 	</head>
@@ -32,16 +32,15 @@ const { Content } = await newsItem.render();
 					<img 
 						src={newsItem.data.heroImage} 
 						alt={newsItem.data.title} 
-						class="w-full opacity-70" 
+						class="w-full h-auto rounded-md sm:rounded-lg lg:rounded-xl opacity-70 " 
 					/>
-					<h2 class="absolute inset-0 flex items-center justify-center text-center text-white dark:text-violet-800 font-bold">
-						{newsItem.data.title}
-					</h2>
 				</div>
-				<p class="mt-4">
-					<FormattedDate date={newsItem.data.pubDate} />
-				</p>
-				<Content />
+				<div class="mt-4">
+					<Content />
+				</div>
+				<div class="mt-4">
+					<i>Erschienen am <FormattedDate date={newsItem.data.pubDate} /></i>
+				</div>
 			</article>
 		</main>
 		<Footer />
