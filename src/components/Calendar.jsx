@@ -52,7 +52,8 @@ export default function CalendarConf() {
 
     var description = document.getElementById('popup-description');
     if (info.event.extendedProps.description != undefined) {
-      description.innerText = info.event.extendedProps.description;
+      // Allow HTML in description
+      description.innerHTML = info.event.extendedProps.description;
     } else description.innerText = "";
   }
   
