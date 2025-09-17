@@ -1,0 +1,26 @@
+excludes = [
+    "*.png",
+    "*.jpg",
+    "*.svg",
+    ".gitignore",
+    ".prettierrc",
+    "*.toml",
+]
+
+[formatter.nixfmt-rfc-style]
+command = "nixfmt"
+includes = ["*.nix"]
+
+[formatter.prettier]
+command = "prettier"
+options = ["--write"]
+includes = [
+ "*.astro",
+ "*.css",
+ "*.scss",
+ "*.md",
+ "**mdx",
+ "*.yaml",
+ "*.json",
+ "*.jsonc",
+]

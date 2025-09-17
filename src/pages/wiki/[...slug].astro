@@ -1,23 +1,23 @@
 ---
 // src/pages/news/[slug].astro
-import { type CollectionEntry, getCollection } from 'astro:content';
-import NewsPost from '../../layouts/BlogPost.astro';
+import { type CollectionEntry, getCollection } from "astro:content";
+import NewsPost from "../../layouts/BlogPost.astro";
 
 // Define the getStaticPaths function
 export async function getStaticPaths() {
-  const news = await getCollection('wiki');
+  const news = await getCollection("wiki");
   return news.map((post) => ({
     params: { slug: post.slug },
     props: post,
   }));
 }
 
-type Props = CollectionEntry<'wiki'>;
+type Props = CollectionEntry<"wiki">;
 
 // Use Astro.params to get the slug
 const { slug } = Astro.params;
-const post = await getCollection('wiki').then(collection =>
-  collection.find(item => item.slug === slug)
+const post = await getCollection("wiki").then((collection) =>
+  collection.find((item) => item.slug === slug),
 );
 
 if (!post) {
@@ -26,6 +26,7 @@ if (!post) {
 
 const { Content } = await post.render();
 ---
+
 <NewsPost {...post.data}>
   <Content />
 </NewsPost>

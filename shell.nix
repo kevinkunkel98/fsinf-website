@@ -1,12 +1,13 @@
-{ pkgs ? import <nixpkgs> {} }:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 
 pkgs.mkShell {
   buildInputs = with pkgs; [
     # Your packages here
     nodejs
+    treefmt
+    nixfmt-rfc-style
+    nodePackages.prettier
   ];
-
-  # Optional: Define the shell prompt with the current project directory
-  shellHook = ''
-  '';
 }

@@ -1,19 +1,19 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
-import BaseHead from '../../components/BaseHead.astro';
-import Footer from '../../components/Footer.astro';
-import Header from '../../components/Header.astro';
+import { type CollectionEntry, getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import BaseHead from "../../components/BaseHead.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
 
 export async function getStaticPaths() {
-	const newsItems = await getCollection('news');
-	return newsItems.map((newsItem) => ({
-		params: { slug: newsItem.slug },
-		props: newsItem,
-	}));
+  const newsItems = await getCollection("news");
+  return newsItems.map((newsItem) => ({
+    params: { slug: newsItem.slug },
+    props: newsItem,
+  }));
 }
 
-type Props = CollectionEntry<'news'>;
+type Props = CollectionEntry<"news">;
 
 const newsItem = Astro.props;
 const { Content } = await newsItem.render();
@@ -21,28 +21,31 @@ const { Content } = await newsItem.render();
 
 <!doctype html>
 <html lang="de">
-	<head>
-		<BaseHead title={newsItem.data.title} description={newsItem.data.description} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<article class="relative">
-				<div class="relative">
-					<img 
-						src={newsItem.data.heroImage} 
-						alt={newsItem.data.title} 
-						class="w-full h-auto rounded-md sm:rounded-lg lg:rounded-xl opacity-70 " 
-					/>
-				</div>
-				<div class="mt-4">
-					<Content />
-				</div>
-				<div class="mt-4">
-					<i>Erschienen am <FormattedDate date={newsItem.data.pubDate} /></i>
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead
+      title={newsItem.data.title}
+      description={newsItem.data.description}
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="relative">
+        <div class="relative">
+          <img
+            src={newsItem.data.heroImage}
+            alt={newsItem.data.title}
+            class="h-auto w-full rounded-md opacity-70 sm:rounded-lg lg:rounded-xl"
+          />
+        </div>
+        <div class="mt-4">
+          <Content />
+        </div>
+        <div class="mt-4">
+          <i>Erschienen am <FormattedDate date={newsItem.data.pubDate} /></i>
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
 </html>

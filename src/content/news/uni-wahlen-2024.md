@@ -10,17 +10,17 @@ description: "Auch dieses Jahr finden für die Studierenden der Uni Leipzig wied
 Auch dieses Jahr finden für die Studierenden der Uni Leipzig wieder Wahlen von Fachschaftsrat, Fakultätsrat, Senat, Erweitertem Senat und dem Referat Ausländischer Studierender statt. Alle Details zu den einzelnen Gremien findet ihr hier. Neu ist dieses Jahr, dass alle Wahlen online stattfinden, es also keine Urnenwahl in Präsenz gibt.
 
 > **Wann?** Von Dienstag den 18.06. um 12 Uhr bis Dienstag den 25.06. um 12 Uhr
-> 
+>
 > **Wie?** Über ein Online-Wahlsystem. Ihr solltet in eurem Uni Postfach bereits zwei E-Mails mit “Wahlschreiben” im Betreff mit euren Zugangsdaten erhalten haben
-> 
+>
 > **Warum?** Mit dem FSR wählt ihr eure direkte studentische Vertretung, die sich für eure Interessen an der Uni einsetzt! Senat und Fakuktätsrat sind die höchsten Gremien der Universität bzw. der Fakultät. In ihnen werden zentrale Entscheidungen zu Forschung, Lehre und Studium getroffen.
 
-Wir sind aber trotzdem auch vor Ort für euch da! Es gibt Eis für alle Wähler*innen am Mittwoch und Donnerstag (19. & 20.06.) von 10:00 bis 16:00 Uhr in Raum A531 (großer Glaskasten in der 5. Etage im Augusteum).
+Wir sind aber trotzdem auch vor Ort für euch da! Es gibt Eis für alle Wähler\*innen am Mittwoch und Donnerstag (19. & 20.06.) von 10:00 bis 16:00 Uhr in Raum A531 (großer Glaskasten in der 5. Etage im Augusteum).
 
 Alle weiteren Informationen zu den Wahlen findet ihr hier und hier.
 Die Kandidierenden
 
-Für die 11 Sitze im Fachschaftsrat Informatik kandidieren 15 Personen. Ihr habt 3 Stimmen, die ihr beliebig auf die Kandidierenden verteilen könnt. Hier stellen sie sich und ihre Ideen kurz vor. Mit (*) gekennzeichnete Personen kandidieren auch für den Fakuktätsrat.
+Für die 11 Sitze im Fachschaftsrat Informatik kandidieren 15 Personen. Ihr habt 3 Stimmen, die ihr beliebig auf die Kandidierenden verteilen könnt. Hier stellen sie sich und ihre Ideen kurz vor. Mit (\*) gekennzeichnete Personen kandidieren auch für den Fakuktätsrat.
 
 ### Martin Gutsche (er/ihm) - Master Informatik
 
@@ -38,7 +38,7 @@ Hallo! Ich bin Jil und habe vor, mich für den Offenen Inforaum und andere Hilfs
 
 Verstehen, wie die Uni funktioniert. Auch mal kritische Fragen stellen. Dran bleiben, wenn die Muehlen langsam mahlen. Weil Mitbestimmung nicht von alleine kommt. Vielleicht auch fuer Dich?
 
-### Mats Brockmann (er/ihm) - Bachelor Informatik (*)
+### Mats Brockmann (er/ihm) - Bachelor Informatik (\*)
 
 Legislaturperiode 2: Electric Boogaloo Mehr von dem Gleichen (Ich will den Transponder behalten.)
 
@@ -46,7 +46,7 @@ Legislaturperiode 2: Electric Boogaloo Mehr von dem Gleichen (Ich will den Trans
 
 Heyo, ich bin Erik und habe Lust euch im Unialltag zu unterstützen und Events wie Gamejams und schnieke Powerpoint-Abende oder ähnliches rund um die Informatik zu organisieren. ^^
 
-### Florian Speer (alle/all) - Master Informatik (*)
+### Florian Speer (alle/all) - Master Informatik (\*)
 
 Ihr kennt mich.
 
@@ -64,7 +64,7 @@ Revolution durch Alliteration! Mit extraordinärer Schaffenskraft kämpfe ich mi
 
 ### Yasmin Marschall (alle/all) - Bachelor Digital Humanities
 
-Ich bewerbe mich auf eine 4. Amtszeit im FSR. Hier vertrete ich die DH-Studis und Flinta*-Personen, mach einige Orga-Aufgaben, und plane aktuell die nächste Erstifahrt.
+Ich bewerbe mich auf eine 4. Amtszeit im FSR. Hier vertrete ich die DH-Studis und Flinta\*-Personen, mach einige Orga-Aufgaben, und plane aktuell die nächste Erstifahrt.
 
 ### Erik Daas (er/ihm) - Lehramt Informatik + Bachelor Informatik
 
@@ -74,7 +74,7 @@ Umverteilung von FSR-Geldern an arme Studierende fancy Veranstaltungen, bestenfa
 
 Moin, ihr alle! Kurz: Ich vertrete euch! Ihr nicht schlau? => ich finde Modul! Ihr schlechte Note? => ich grrrr Prof! Ihr traurig? => ich organisiere: zusammen traurig! Ihr lost? Ich finde Weg?!?
 
-### Felix Bajus (er/ihm) - Bachelor Digital Humanities (*)
+### Felix Bajus (er/ihm) - Bachelor Digital Humanities (\*)
 
 Ich möchte weiter Events organisieren (Ersti-Woche, DH-MeetUp) und in Gremien mitwirken :) Außerdem kandidiere ich für den Fakultätsrat.
 
