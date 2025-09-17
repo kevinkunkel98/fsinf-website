@@ -22,34 +22,39 @@ const newsItems = (await getCollection('news')).sort(
 			<section>
 				<h1>News</h1>
 				<ul class="grid grid-flow-row grid-cols-1 sm:grid-cols-2 gap-8 list-none m-0 p-0 w-full h-auto justify-center">
-					{newsItems.map((newsItem) => (
-						<li class="bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700 border-solid border-2 w-full h-auto rounded-3xl">
+					{newsItems.map((item) => (
+						<li class="flex flex-col w-full h-auto rounded-3xl bg-white dark:bg-gray-800 border border-sm border-gray-200 dark:border-gray-700">
 							<!-- Image Section -->
 							<img
-								src={newsItem.data.heroImage}
-								alt={newsItem.data.title}
+								src={item.data.heroImage}
+								alt={item.data.title}
 								class="m-0 p-0 w-full h-48 rounded-2xl rounded-b-none object-cover"
 								width="100%"
 							/>
       						<!-- Text Section -->
-							<div class="p-4 flex-grow flex flex-col justify-between">
-								<div class="flex flex-col w-full justify-between">
-									<!-- Title and date -->
-									<h4 class="m-0 p-0 text-center font-bold tracking-tight">{newsItem.data.title}</h4>
-									<p class="m-0 p-0 text-center font-bold">
-										<FormattedDate date={newsItem.data.pubDate} />
-									</p>
-								</div>
-								<!-- Content -->
-								<p>{newsItem.data.description}</p>
+							<div class="p-4 flex-grow flex flex-col justify-between text-center">
+								<!-- Title -->
+								<a href={`/news/${item.slug}/`}>
+									<h5 class="mb-2 font-bold text-lg tracking-tight text-gray-900 dark:text-white">
+										{item.data.title}
+									</h5>
+								</a>
+								<!-- Date Section -->
+								<p class="font-bold text-xs text-gray-400 dark:text-gray-300 mb-2">
+								<FormattedDate date={item.data.pubDate} />
+								</p>
+								<!-- Description -->
+								<p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-100">
+								{item.data.description}
+								</p>
 								<!-- Link -->
 								<div class="flex justify-center mt-auto">
-									<a
-										href={`/news/${newsItem.slug}/`}
-										class="px-3 py-1 text-sm text-center text-white dark:text-gray-100 bg-blue-500 dark:bg-blue-600 rounded-lg focus:ring-4 focus:outline-none focus:text-gray-200 dark:focus:ring-gray-400"
-									>
-										weiterlesen
-									</a>
+								<a
+									href={`/news/${item.slug}/`}
+									class="px-3 py-1 text-sm text-center text-white dark:text-gray-100 bg-blue-500 dark:bg-blue-600 hover:text-gray-300 hover:dark:text-gray-400 focus:ring-4 focus:outline-none focus:text-gray-400 focus:dark:text-gray-400 focus:ring-gray-300 dark:hover:ring-gray-400 rounded-lg"
+								>
+									weiterlesen
+								</a>
 								</div>
 							</div>
 						</li>

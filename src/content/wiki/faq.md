@@ -3,7 +3,7 @@ title: "FAQ"
 description: "Antworten auf deine Fragen."
 pubDate: "Jun 17 2025"
 ordinal: 1
-heroImage: "/assets/wiki/rathaus.jpg"
+heroImage: "/assets/news/fsr.jpg"
 ---
 
 ## Inhalt

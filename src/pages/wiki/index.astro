@@ -19,21 +19,25 @@ const posts = (await getCollection('wiki')).sort(
 		<Header />
 		<main>
 			<section class="w-full">
-				<div class="grid grid-flow-row grid-cols-1 sm:grid-cols-2 transition-shadow gap-5 gap-y-6 justify-center">
+				<ul class="grid grid-flow-row grid-cols-1 sm:grid-cols-2 gap-5 gap-y-6 list-none justify-center">
 					{posts.map((post) => (
-						<div class="bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700 border-solid border-2 rounded-3xl">
-						<a class="hover:no-underline" href={`/wiki/${post.slug}/`}>
+						<li class="flex flex-col w-full h-auto rounded-3xl bg-white dark:bg-gray-800 border border-m border-gray-200 dark:border-gray-700">
 							<!-- Cover image -->
-							<img class="m-0 p-0 w-full h-[300px] max-h-[300px] rounded-2xl rounded-b-none" width={720} height={300} src={post.data.heroImage} alt="" />
-							<div class="p-2 pb-4">
+							<a class="hover:no-underline" href={`/wiki/${post.slug}/`}>
+								<img class="m-0 p-0 w-full h-[300px] max-h-[300px] rounded-2xl rounded-b-none object-cover" width={720} height={300} src={post.data.heroImage} alt="" />
+							</a>
+							<div class="flex-grow flex flex-col justify-center p-2">
 								<!-- Title and description -->
-								<h3 class="m-0 p-0">{post.data.title}</h3>
-								<i>{post.data.description}</i>
+        						<a href={`/news/${post.slug}/`}>
+									<h4 class="font-bold m-1 text-2xl tracking-tight">{post.data.title}</h4>
+								</a>
+								<p class="font-bold text-gray-400 dark:text-gray-300 mb-4 mt-1">
+									<i>{post.data.description}</i>
+								</p>
 							</div>
-						</a>
-						</div>
+						</li>
 					))}
-				</div>
+				</ul>
 			</section>
 		</main>
 		<Footer />
