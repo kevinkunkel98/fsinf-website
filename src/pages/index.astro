@@ -1,9 +1,19 @@
 ---
+import { getCollection } from "astro:content";
+
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import NewsElement from "../components/NewsElement.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import News from "../components/News.astro";
+
+const news = await getCollection("news");
+
+// Sort news after date and then limit them to 3. We don't want to show more then
+// the last 3 most recent posts on the front page.
+const sortedNews = news
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 import Accordion from "../components/Accordion.astro";
 ---
 
@@ -31,7 +41,22 @@ import Accordion from "../components/Accordion.astro";
       </p>
       <section>
         <h2>News</h2>
-        <News />
+        <div
+          class="grid w-full grid-cols-1 justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {
+            sortedNews.map((item) => (
+              <NewsElement
+                slug={item.slug}
+                heroImage={item.data.heroImage}
+                title={item.data.title}
+                description={item.data.description}
+                pubDate={item.data.pubDate}
+              />
+            ))
+          }
+        </div>
+
         <!-- Include the News component -->
       </section>
       <p class="pt-10">

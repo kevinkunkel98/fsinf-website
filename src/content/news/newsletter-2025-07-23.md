@@ -1,7 +1,7 @@
 ---
 title: "Newsletter"
 pubDate: 2025-07-23
-heroImage: "/assets/news/fsr.jpg"
+heroImage: "/src/images/news/fsr.jpg"
 description: "Wenn ihr euch gerade überlegt, welche Wahlmodule ihr nächstes Semester belegen möchtet, könnt ihr euch auf den Task-Cards, die wir letztes Semester eingeführt haben, vielleicht ein paar Infos holen..."
 ---
 

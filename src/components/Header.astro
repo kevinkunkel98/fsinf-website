@@ -1,5 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import { SITE_TITLE } from "../consts";
+
+import telegram from "/src/images/telegram.svg";
+import instagram from "/src/images/insta.svg";
+import discord from "/src/images/discord.svg";
+import gitlab from "/src/images/gitlab.svg";
 ---
 
 <header class="inset-x-0 top-0 z-50 lg:bg-gray-50 lg:dark:bg-slate-800">
@@ -45,41 +51,45 @@ import { SITE_TITLE } from "../consts";
       <div class="flex">
         <a href="https://t.me/fsinfLeipzig" target="_blank">
           <span class="sr-only">Telegram</span>
-          <img
-            src="/assets/telegram.svg"
+          <Image
+            src={telegram}
             alt="Telegram"
             width="32"
             height="32"
+            loading="eager"
             aria-hidden="true"
           />
         </a>
         <a href="https://www.instagram.com/fsinf_leipzig/" target="_blank">
           <span class="sr-only">Fsinf Insta</span>
-          <img
-            src="/assets/insta.svg"
+          <Image
+            src={instagram}
             alt="Instagram"
             width="32"
             height="32"
+            loading="eager"
             aria-hidden="true"
           />
         </a>
         <a href="https://discord.com/invite/kprYzcKpvk" target="_blank">
           <span class="sr-only">Fsinf Discord</span>
-          <img
-            src="/assets/discord.svg"
+          <Image
+            src={discord}
             alt="Discord"
             width="32"
             height="32"
+            loading="eager"
             aria-hidden="true"
           />
         </a>
         <a href="https://git.fsinf.informatik.uni-leipzig.de/" target="_blank">
           <span class="sr-only">Fsinf GitLab repo</span>
-          <img
-            src="/assets/gitlab.svg"
+          <Image
+            src={gitlab}
             alt="GitLab"
             width="32"
             height="32"
+            loading="eager"
             aria-hidden="true"
           />
         </a>
@@ -176,31 +186,34 @@ import { SITE_TITLE } from "../consts";
           <div class="grid grid-cols-4 gap-4 py-4">
             <a href="https://t.me/fsinfLeipzig" target="_blank">
               <span class="sr-only">Telegram</span>
-              <img
-                src="/assets/telegram.svg"
+              <Image
+                src={telegram}
                 alt="Telegram"
                 width="32"
                 height="32"
+                loading="eager"
                 aria-hidden="true"
               />
             </a>
             <a href="https://www.instagram.com/fsinf_leipzig/" target="_blank">
               <span class="sr-only">Fsinf Insta</span>
-              <img
-                src="/assets/insta.svg"
+              <Image
+                src={instagram}
                 alt="Instagram"
                 width="32"
                 height="32"
+                loading="eager"
                 aria-hidden="true"
               />
             </a>
             <a href="https://discord.com/invite/kprYzcKpvk" target="_blank">
               <span class="sr-only">Fsinf Discord</span>
-              <img
-                src="/assets/discord.svg"
+              <Image
+                src={discord}
                 alt="Discord"
                 width="32"
                 height="32"
+                loading="eager"
                 aria-hidden="true"
               />
             </a>
@@ -209,11 +222,12 @@ import { SITE_TITLE } from "../consts";
               target="_blank"
             >
               <span class="sr-only">Fsinf GitLab repo</span>
-              <img
-                src="/assets/gitlab.svg"
+              <Image
+                src={gitlab}
                 alt="GitLab"
                 width="32"
                 height="32"
+                loading="eager"
                 aria-hidden="true"
               />
             </a>

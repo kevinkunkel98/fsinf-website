@@ -1,7 +1,7 @@
 ---
 title: "Newsletter"
 pubDate: 2025-07-16
-heroImage: "/assets/news/fsr.jpg"
+heroImage: "/src/images/news/fsr.jpg"
 description: "Die endgültigen Ergebnisse der FSR Wahlen wurden veröffentlicht. Die genauen Ergebnisse findet ihr auf der Website des Stura. Wir freuen uns sehr, das alle, die bisher schon aktiv im FSR waren und sich aufgestellt haben, auch gewählt wurden."
 ---
 

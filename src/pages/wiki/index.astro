@@ -1,9 +1,10 @@
 ---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
-import { getCollection } from "astro:content";
 
 const posts = (await getCollection("wiki")).sort(
   (a, b) => a.data.ordinal - b.data.ordinal,
@@ -26,16 +27,16 @@ const posts = (await getCollection("wiki")).sort(
             posts.map((post) => (
               <li class="border-m flex h-auto w-full flex-col rounded-3xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
                 <a class="hover:no-underline" href={`/wiki/${post.slug}/`}>
-                  <img
+                  <Image
                     class="m-0 h-[300px] max-h-[300px] w-full rounded-2xl rounded-b-none object-cover p-0"
                     width={720}
                     height={300}
                     src={post.data.heroImage}
-                    alt=""
+                    alt={post.data.description}
                   />
                 </a>
-                <div class="flex flex-grow flex-col justify-center p-2">
-                  <a href={`/news/${post.slug}/`}>
+                <div class="flex flex-grow flex-col justify-center p-2 text-center">
+                  <a href={`/wiki/${post.slug}/`}>
                     <h4 class="m-1 text-2xl font-bold tracking-tight">
                       {post.data.title}
                     </h4>

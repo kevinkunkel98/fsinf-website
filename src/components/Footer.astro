@@ -1,4 +1,11 @@
 ---
+import { Image } from "astro:assets";
+
+import telegram from "/src/images/telegram.svg";
+import instagram from "/src/images/insta.svg";
+import discord from "/src/images/discord.svg";
+import gitlab from "/src/images/gitlab.svg";
+
 const today = new Date();
 ---
 
@@ -13,9 +20,9 @@ const today = new Date();
       class="hover:text-gray-900"
     >
       <span class="sr-only">Fsinf Telegram</span>
-      <img
-        src="/assets/telegram.svg"
-        alt="Twitter"
+      <Image
+        src={telegram}
+        alt="Telegram"
         width="32"
         height="32"
         aria-hidden="true"
@@ -28,9 +35,9 @@ const today = new Date();
       class="hover:text-gray-900"
     >
       <span class="sr-only">Fsinf Insta</span>
-      <img
-        src="/assets/insta.svg"
-        alt="Insta"
+      <Image
+        src={instagram}
+        alt="Instagram"
         width="32"
         height="32"
         aria-hidden="true"
@@ -43,8 +50,8 @@ const today = new Date();
       class="hover:text-gray-900"
     >
       <span class="sr-only">Fsinf Discord</span>
-      <img
-        src="/assets/discord.svg"
+      <Image
+        src={discord}
         alt="Discord"
         width="32"
         height="32"
@@ -58,9 +65,9 @@ const today = new Date();
       class="hover:text-gray-900"
     >
       <span class="sr-only">Fsinf GitLab repo</span>
-      <img
-        src="/assets/gitlab.svg"
-        alt="Mastodon"
+      <Image
+        src={gitlab}
+        alt="GitLab"
         width="32"
         height="32"
         aria-hidden="true"

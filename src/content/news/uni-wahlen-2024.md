@@ -1,7 +1,7 @@
 ---
 title: "Uni Wahlen 2024 - Kandidierende"
 pubDate: 2024-08-02
-heroImage: "/assets/wiki/democracy.png"
+heroImage: "/src/images/wiki/democracy.png"
 description: "Auch dieses Jahr finden für die Studierenden der Uni Leipzig wieder Wahlen von Fachschaftsrat, Fakultätsrat, Senat, Erweitertem Senat und dem Referat Ausländischer Studierender statt."
 ---
 

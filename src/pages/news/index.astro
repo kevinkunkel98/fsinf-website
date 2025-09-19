@@ -1,10 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import NewsElement from "../../components/NewsElement.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
-import { getCollection } from "astro:content";
-import FormattedDate from "../../components/FormattedDate.astro";
 
 const newsItems = (await getCollection("news")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -21,43 +21,21 @@ const newsItems = (await getCollection("news")).sort(
     <main class="w-100 m-auto p-4 md:w-5/6 lg:w-[960px]">
       <section>
         <h1>News</h1>
-        <ul
+        <div
           class="m-0 grid h-auto w-full list-none grid-flow-row grid-cols-1 justify-center gap-8 p-0 sm:grid-cols-2"
         >
           {
             newsItems.map((item) => (
-              <li class="border-sm flex h-auto w-full flex-col rounded-3xl border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
-                <img
-                  src={item.data.heroImage}
-                  alt={item.data.title}
-                  class="m-0 h-48 w-full rounded-2xl rounded-b-none object-cover p-0"
-                  width="100%"
-                />
-                <div class="flex flex-grow flex-col justify-between p-4 text-center">
-                  <a href={`/news/${item.slug}/`}>
-                    <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-                      {item.data.title}
-                    </h5>
-                  </a>
-                  <p class="mb-2 text-xs font-bold text-gray-400 dark:text-gray-300">
-                    <FormattedDate date={item.data.pubDate} />
-                  </p>
-                  <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-100">
-                    {item.data.description}
-                  </p>
-                  <div class="mt-auto flex justify-center">
-                    <a
-                      href={`/news/${item.slug}/`}
-                      class="rounded-lg bg-blue-500 px-3 py-1 text-center text-sm text-white hover:text-gray-300 focus:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:bg-blue-600 dark:text-gray-100 hover:dark:text-gray-400 dark:hover:ring-gray-400 focus:dark:text-gray-400"
-                    >
-                      weiterlesen
-                    </a>
-                  </div>
-                </div>
-              </li>
+              <NewsElement
+                slug={item.slug}
+                heroImage={item.data.heroImage}
+                title={item.data.title}
+                description={item.data.description}
+                pubDate={item.data.pubDate}
+              />
             ))
           }
-        </ul>
+        </div>
       </section>
     </main>
     <Footer />

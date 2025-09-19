@@ -3,7 +3,7 @@ title: "Demokratie an der Uni"
 description: "StuRa, FSR, etc."
 pubDate: "Jun 17 2025"
 ordinal: 5
-heroImage: "/assets/wiki/democracy.png"
+heroImage: "/src/images/wiki/democracy.png"
 ---
 
 Wurde Ende September 2012 mit den Stimmen von FDP, CDU und NPD im sächsischen Landtag faktisch abgeschafft. Seitdem können Studierende ab dem zweiten Semester aus der verfassten Studierendenschaft austreten. Wir empfehlen euch, dies nicht zu tun.

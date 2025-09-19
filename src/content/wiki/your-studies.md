@@ -3,7 +3,7 @@ title: "Dein Studium"
 description: "Alles was du als Ersti, wissen musst."
 pubDate: "Jun 17 2025"
 ordinal: 2
-heroImage: "/assets/wiki/uni.png"
+heroImage: "/src/images/wiki/uni.png"
 ---
 
 Hier haben wir für dich nützliche Informationen über das Studium zusammengetragen. Darüber findet Die Informationen, die wir dir hier zur Verfügung stellen, entsprechen unserem eigenen Wissensstand nach mehreren Semestern Studium und bestem Wissen und Gewissen. Sie stellen **keine rechtsverbindlichen Auskünfte** dar, sondern sollen dir das Studienleben ergänzen und erleichtern. Sie können – insbesondere bei Problemfällen – keinesfalls eine Studienberatung durch das Studienbüro ersetzen.

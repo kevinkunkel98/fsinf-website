@@ -1,9 +1,18 @@
 ---
+import { Image } from "astro:assets";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Carousel from "../components/Carousel.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+import erstifahrt1 from "/src/images/events/meddel.jpg";
+import erstifahrt2 from "/src/images/events/fuego.jpg";
+import erstifahrt3 from "/src/images/events/erstis.jpg";
+
+import gamejam1 from "/src/images/events/Logo.svg";
+import gamejam2 from "/src/images/events/game0.png";
+import gamejam3 from "/src/images/events/game1.png";
 ---
 
 <!doctype html>
@@ -39,20 +48,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           class="mt-6 grid grid-cols-1 gap-8 px-4 sm:grid-cols-2 md:grid-cols-3"
         >
           <!-- Event Image 1 -->
-          <img
-            src="/assets/events/meddel.jpg"
+          <Image
+            src={erstifahrt1}
             alt="Event 1"
             class="h-64 w-full cursor-pointer object-cover"
           />
           <!-- Event Image 2 -->
-          <img
-            src="/assets/events/fuego.jpg"
+          <Image
+            src={erstifahrt2}
             alt="Event 2"
             class="h-64 w-full cursor-pointer object-cover"
           />
           <!-- Event Image 3 -->
-          <img
-            src="/assets/events/erstis.jpg"
+          <Image
+            src={erstifahrt3}
             alt="Event 3"
             class="h-64 w-full cursor-pointer object-cover"
           />
@@ -79,20 +88,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           class="mt-6 grid grid-cols-1 gap-8 px-4 sm:grid-cols-2 md:grid-cols-3"
         >
           <!-- Event Image 1 -->
-          <img
-            src="/assets/events/Logo.svg"
+          <Image
+            src={gamejam1}
             alt="Event 1"
             class="h-64 w-full cursor-pointer"
           />
           <!-- Event Image 2 -->
-          <img
-            src="/assets/events/game0.png"
+          <Image
+            src={gamejam2}
             alt="Event 2"
             class="h-64 w-full cursor-pointer object-cover"
           />
           <!-- Event Image 3 -->
-          <img
-            src="/assets/events/game1.png"
+          <Image
+            src={gamejam3}
             alt="Event 3"
             class="h-64 w-full cursor-pointer object-cover"
           />

@@ -1,5 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import "flowbite";
+
+import image1 from "/src/images/events/gamejam.jpg";
+import image2 from "/src/images/events/neddeleude.jpg";
+import image3 from "/src/images/events/meddel.jpg";
+import image4 from "/src/images/events/erstis.jpg";
 ---
 
 <script
@@ -12,34 +18,38 @@ import "flowbite";
   <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
     <!-- Item 1 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/assets/events/gamejam.jpg"
+      <Image
+        src={image1}
         class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-        alt="..."
+        alt="Gamejam"
+        loading="eager"
       />
     </div>
     <!-- Item 2 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/assets/events/neddeleude.jpg"
+      <Image
+        src={image2}
         class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-        alt="..."
+        alt="Erstifahrt"
+        loading="eager"
       />
     </div>
     <!-- Item 3 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/assets/events/meddel.jpg"
+      <Image
+        src={image3}
         class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
         alt="..."
+        loading="eager"
       />
     </div>
     <!-- Item 4 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/assets/events/erstis.jpg"
+      <Image
+        src={image4}
         class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
         alt="..."
+        loading="eager"
       />
     </div>
   </div>
