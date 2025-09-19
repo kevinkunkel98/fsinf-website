@@ -1,18 +1,19 @@
 ---
-title: 'Dein Studium'
-description: 'Alles was du als Ersti, wissen musst.'
+title: "Dein Studium"
+description: "Alles was du als Ersti, wissen musst."
 pubDate: "Jun 17 2025"
 ordinal: 2
-heroImage: '/assets/wiki/rathaus.jpg'
+heroImage: "/src/images/wiki/uni.png"
 ---
 
-Hier haben wir für dich nützliche Informationen über das Studium zusammengetragen. Darüber findet  Die Informationen, die wir dir hier zur Verfügung stellen, entsprechen unserem eigenen Wissensstand nach mehreren Semestern Studium und bestem Wissen und Gewissen. Sie stellen **keine rechtsverbindlichen Auskünfte** dar, sondern sollen dir das Studienleben ergänzen und erleichtern. Sie können – insbesondere bei Problemfällen – keinesfalls eine Studienberatung durch das Studienbüro ersetzen.
+Hier haben wir für dich nützliche Informationen über das Studium zusammengetragen. Darüber findet Die Informationen, die wir dir hier zur Verfügung stellen, entsprechen unserem eigenen Wissensstand nach mehreren Semestern Studium und bestem Wissen und Gewissen. Sie stellen **keine rechtsverbindlichen Auskünfte** dar, sondern sollen dir das Studienleben ergänzen und erleichtern. Sie können – insbesondere bei Problemfällen – keinesfalls eine Studienberatung durch das Studienbüro ersetzen.
 
 Im Zweifelsfall verlass dich nicht auf unsere Informationen, sondern lies die Ordnungen und/oder frage im Studienbüro nach!
 
 Falls du Fehler oder veraltete Informationen findest, kannst du Änderungen unter [https://git.fsinf.informatik.uni-leipzig.de/material/fsinf-wissen](https://git.fsinf.informatik.uni-leipzig.de/material/fsinf-wissen) vorschlagen. Diese Seite kann nur durch eure Hilfe aktuell bleiben, also schonmal ein großes Dankeschön an dieser Stelle.
 
 ## 1. Dein Studium <a name="Studium"></a>
+
 ### 1.1 Universität <a name="1.1"></a>
 
 Die Universität Leipzig besteht aus 14 Fakultäten, die wiederum in Institute untergliedert sind. Falls du Bachelor Informatik, Master Informatik, Bachelor Digital Humanities, Master Digital Humanities, Master Bioinformatik, Master Data Science, Lehramt Informatik oder noch Magister/Diplom Informatik studierst, dann ist dein Institut das Institut für Informatik, welches Teil der Fakultät für Mathematik und Informatik ist.
@@ -21,20 +22,21 @@ Die Universität Leipzig besteht aus 14 Fakultäten, die wiederum in Institute u
 
 Das Institut für Informatik befindet sich auf dem Campus Augustusplatz. Die meisten Räume findest du im vierten und fünften Obergeschoss des Augusteums sowie im Paulinum. Der Felix-Klein-Hörsaal hat die Raumnummer P-501 und befindet sich im 5. Obergeschoss des Paulinums, also über der Kirche. Vorlesungen, Seminare und Übungen finden meist im Hörsaalgebäude und im Seminargebäude auf dem Campus Augustusplatz statt.
 
-### 1.3 Studiengänge an unserem Institut  <a name="1.3"></a>
+### 1.3 Studiengänge an unserem Institut <a name="1.3"></a>
+
 Das Institut für Informatik beherbergt mehrere Studiengänge:
 
-* Bachelor Informatik
-* Bachelor Digital Humanities
-* Master Informatik
-* Master Digital Humanities
-* Master Bioinformatik
-* Master Data Science
-* Lehramt Informatik
+- Bachelor Informatik
+- Bachelor Digital Humanities
+- Master Informatik
+- Master Digital Humanities
+- Master Bioinformatik
+- Master Data Science
+- Lehramt Informatik
 
 Informationen und Beschreibungen zu den Studiengängen findest du auf der [Webseite des Instituts](http://studium.fmi.uni-leipzig.de/studium/)
 
-### 1.4 Regelstudienzeit  <a name="1.4"></a>
+### 1.4 Regelstudienzeit <a name="1.4"></a>
 
 Die Regelstudienzeit ist die Zeit, die du für dein Studium brauchst, wenn du gemäß dem empfohlenen Studienablaufplan studierst. Das bedeutet, dass du Module in einem Umfang von 30 Leistungspunkten (kurz: LP, auch: credit points oder ECTS-Punkte) pro Semester absolvierst.
 
@@ -42,7 +44,7 @@ Ab einer Überschreitung der Regelstudienzeit um 4 Semester werden Langzeitstudi
 
 Bei besonderen Umständen - Teilzeitstudium, Studieren mit Kind, langer Krankheit und anderen besonderen sozialen Lagen - sind Ausnahmeregelungen vorgesehen. Wende dich an den [StuRa](https://stura.uni-leipzig.de) oder das [StudentInnensekretariat](https://www.studentenwerk-leipzig.de/beratung-soziales/studenten-service-zentrum).
 
-### 1.5 Module und Workload  <a name="1.5"></a>
+### 1.5 Module und Workload <a name="1.5"></a>
 
 Bachelor- und Masterstudiengänge bestehen aus Modulen. Die Module umfassen 5 oder 10 Leistungspunkte, wobei ein Leistungspunkt einer (sehr hoch angesetzten und in der Praxis kaum machbaren) Arbeitszeit von 30 Stunden entsprechen soll. Module bestehen gewöhnlich aus einer oder mehreren Vorlesungen, Seminaren, Übungen und/oder Praktika und enden mit einer oder mehreren schriftlichen oder mündlichen Prüfungen. Auch die Abschlussarbeiten (Bachelorarbeit und Masterarbeit) werden als Module aufgeführt.
 
@@ -52,8 +54,8 @@ Neben den Pflichtmodulen gibt es **Wahlpflichtmodule**. Du musst in einem bestim
 
 Für Schlüsselqualifikations-Module (SQ) gilt folgendes:
 
-* Im Bachelor müssen 10 LP in [fakultätsexternen SQ-Modulen](https://www.uni-leipzig.de/studium/studienorganisation/moduleinschreibung/sq-bereich.html) absolviert werden. Dazu findet eine Onlineeinschreibung statt (siehe Abschnitt "Einschreibung"). Es werden Module aus verschiedenen Fachrichtungen angeboten. Du kannst entweder ein 10-LP-Modul oder zwei 5-LP-Module belegen. Das SQ-Modul kann auch fakultätsintern belegt werden.
-* Im Master muss ein fakultäts_internes_ SQ-Modul gewählt werden. Dies kann jedes beliebige Modul aus der Mathematik, Informatik oder medizinischen Informatik sein, dass du noch nicht belegt hast. Auch hier können entweder ein 10-LP-Modul oder zwei 5-LP-Module absolviert werden.
+- Im Bachelor müssen 10 LP in [fakultätsexternen SQ-Modulen](https://www.uni-leipzig.de/studium/studienorganisation/moduleinschreibung/sq-bereich.html) absolviert werden. Dazu findet eine Onlineeinschreibung statt (siehe Abschnitt "Einschreibung"). Es werden Module aus verschiedenen Fachrichtungen angeboten. Du kannst entweder ein 10-LP-Modul oder zwei 5-LP-Module belegen. Das SQ-Modul kann auch fakultätsintern belegt werden.
+- Im Master muss ein fakultäts*internes* SQ-Modul gewählt werden. Dies kann jedes beliebige Modul aus der Mathematik, Informatik oder medizinischen Informatik sein, dass du noch nicht belegt hast. Auch hier können entweder ein 10-LP-Modul oder zwei 5-LP-Module absolviert werden.
 
 ### 1.6 Ergänzungsfach <a name="1.6"></a>
 
@@ -77,7 +79,7 @@ Kompetente und verbindliche Antworten in Studien- und Prüfungsbelangen erhälst
 
 ### 1.9 Moduleinschreibung <a name="1.9"></a>
 
-Zum WS15/16 erfolgte die Umstellung auf  [Almaweb](https://almaweb.uni-leipzig.de). Dort erfolgt die Einschreibung für die meisten Module. Hinweise zur Moduleinschreibung findest du zu Beginn jeden Semesters [hier](http://studium.fmi.uni-leipzig.de/moduleinschreibung.html).
+Zum WS15/16 erfolgte die Umstellung auf [Almaweb](https://almaweb.uni-leipzig.de). Dort erfolgt die Einschreibung für die meisten Module. Hinweise zur Moduleinschreibung findest du zu Beginn jeden Semesters [hier](http://studium.fmi.uni-leipzig.de/moduleinschreibung.html).
 Zu praktisch allen Modulen gibt es Informationen auf der Webseite der zuständigen Abteilung und im Modulhandbuch deines Studiengangs.
 
 Die Modulanmeldung ist zugleich auch die Anmeldung zur Prüfung. Genauere Infos und Anworten auf deine Fagen bekommst du beim [Studienbüro](http://studium.fmi.uni-leipzig.de/) oder beim jeweiligen Dozenten.
@@ -96,10 +98,10 @@ Informationen zu den Modulen und dem Übungsmaterial findest du auf der vom Doze
 
 Die häufigsten Prüfungsvorleistungen sind:
 
-* Zwischenklausuren (Vorklausuren),
-* Übungsscheine (meist regelmäßige Übungsaufgaben, bei denen ihr oft mindestens 50% der Punkte erreichen müsst),
-* Testate (z.B. bei Praktika) und
-* Vorträge/Präsentationen mit oder ohne schriftliche Ausarbeitung.
+- Zwischenklausuren (Vorklausuren),
+- Übungsscheine (meist regelmäßige Übungsaufgaben, bei denen ihr oft mindestens 50% der Punkte erreichen müsst),
+- Testate (z.B. bei Praktika) und
+- Vorträge/Präsentationen mit oder ohne schriftliche Ausarbeitung.
 
 Ob Module Prüfungsvorleistungen haben (und welche), steht in der [Prüfungsordnung](https://www.informatik.uni-leipzig.de/ifi/studium/studiengnge.html). Du erfährst es auch beim ersten Termin des Moduls.
 
@@ -135,12 +137,12 @@ Weitere Informationen zur Rechtslage gibt's [beim StuRa](https://www.stura.uni-l
 
 ### 1.16 Hilfe im Studium <a name="1.16"></a>
 
-* Studentische Angelegenheiten und Fragen: [FSR Informatik](https://fsinf.informatik.uni-leipzig.de/pages/impressum/) und [StuRa](https://stura.uni-leipzig.de/)
+- Studentische Angelegenheiten und Fragen: [FSR Informatik](https://fsinf.informatik.uni-leipzig.de/pages/impressum/) und [StuRa](https://stura.uni-leipzig.de/)
 <!-- StuRa- und StuWe-Beratungskram verlinken -->
-* [Studieren mit Kind - Beratung des Studentenwerks](https://www.studentenwerk-leipzig.de/beratung/studieren-mit-kind)
-* [Sozialberatung des Studentenwerks](https://www.studentenwerk-leipzig.de/beratung/sozialberatung)
-* [Psychosoziale Beratung des Studentenwerks](https://www.studentenwerk-leipzig.de/beratung/psychosoziale-beratung)
-* [Psychologische Beratungsstelle des Zentrums für Lehrerbildung und Schulforschung](http://www.zls.uni-leipzig.de/psychologischeberatungsstelle.html)
-* [Studentisches Sorgentelefon Nightline](http://leipzig.nightlines.eu/)
+- [Studieren mit Kind - Beratung des Studentenwerks](https://www.studentenwerk-leipzig.de/beratung/studieren-mit-kind)
+- [Sozialberatung des Studentenwerks](https://www.studentenwerk-leipzig.de/beratung/sozialberatung)
+- [Psychosoziale Beratung des Studentenwerks](https://www.studentenwerk-leipzig.de/beratung/psychosoziale-beratung)
+- [Psychologische Beratungsstelle des Zentrums für Lehrerbildung und Schulforschung](http://www.zls.uni-leipzig.de/psychologischeberatungsstelle.html)
+- [Studentisches Sorgentelefon Nightline](http://leipzig.nightlines.eu/)
 <!--Überschrift AntidiskriminierungAntidiskriminierung, evtl Link auf antisexismusbroschuere-->
-* [Fördermöglichkeiten speziell für Studenten mit Behinderung](http://www.barrierefrei-studieren.de/)
+- [Fördermöglichkeiten speziell für Studenten mit Behinderung](http://www.barrierefrei-studieren.de/)

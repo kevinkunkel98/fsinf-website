@@ -4,10 +4,10 @@
 
 ## Technologies
 
-* [Astrojs](https://astro.build/) - Framework
-* [Tailwind CSS](https://tailwindcss.com/) - Styling
-* [Typescript](https://www.typescriptlang.org/)
-* [Flowbite](https://flowbite.com/) - Component Library
+- [Astrojs](https://astro.build/) - Framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Typescript](https://www.typescriptlang.org/)
+- [Flowbite](https://flowbite.com/) - Component Library
 
 **Features:**
 

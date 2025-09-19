@@ -1,140 +1,210 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en" class="bg:dark">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main class="text-center">
-      <h1 class="dark:text-violet-400 font-bold text-center">Begrüßt unsere aktuellen Mitglieder!</h1>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="text-center">
+      <h1 class="text-center font-bold dark:text-violet-400">
+        Begrüßt unsere aktuellen Mitglieder!
+      </h1>
       <p>
-        Hier stellen sich unsere aktiven Mitglieder und ihre jeweilige Position im FSR vor.
-        Der FSR Informatik besteht aus 11 gewählten Mitgliedern, für die ihr jährlich bei den studentischen Wahlen stimmen könnt.
-        Ihre Amtszeit geht vom 01.10.2024 bis zum 30.09.2025.
-      <div class="space-y-6">
-        <!-- Profile Card -->
-        <div class="flex flex-col items-center md:flex-row items-start p-5 bg-white shadow-lg rounded-lg dark:bg-gray-800">
-          <img
-            class="w-64 h-80 mb-4 md:mb-0 md:mr-6 object-cover"
-            src="/assets/kungel.jpg"
-            alt="Profile Picture"
-          />
-          <div class="text-left">
-            <h2 class="dark:text-violet-400 font-bold">Kevin Kunkel</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-bold">M.Sc. Informatik</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Prüfungsausschuss (stellv.)</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Vernetzungs-Botschafter</p>
-            <p class="text-gray-600 dark:text-gray-400 italic">Hackspace</p>
-            <p>
-              Revolution durch Alliteration! Mit extraordinärer Schaffenskraft kämpfe ich mit meinen Ideen und Visionen für einen lebendigen FSR.
-              Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen! Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb und außerhalb der Fakultät.
-            </p>
+        Hier stellen sich unsere aktiven Mitglieder und ihre jeweilige Position
+        im FSR vor. Der FSR Informatik besteht aus 11 gewählten Mitgliedern, für
+        die ihr jährlich bei den studentischen Wahlen stimmen könnt. Ihre
+        Amtszeit geht vom 01.10.2024 bis zum 30.09.2025.
+        <div class="space-y-6">
+          <!-- Profile Card -->
+          <div
+            class="flex flex-col items-start items-center rounded-lg bg-white p-5 shadow-lg dark:bg-gray-800 md:flex-row"
+          >
+            <img
+              class="mb-4 h-80 w-64 object-cover md:mb-0 md:mr-6"
+              src="/assets/kungel.jpg"
+              alt="Profile Picture"
+            />
+            <div class="text-left">
+              <h2 class="font-bold dark:text-violet-400">Kevin Kunkel</h2>
+              <p class="font-bold text-gray-600 dark:text-gray-400">
+                M.Sc. Informatik
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Prüfungsausschuss (stellv.)
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Vernetzungs-Botschafter
+              </p>
+              <p class="italic text-gray-600 dark:text-gray-400">Hackspace</p>
+              <p>
+                Revolution durch Alliteration! Mit extraordinärer Schaffenskraft
+                kämpfe ich mit meinen Ideen und Visionen für einen lebendigen
+                FSR. Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen!
+                Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb
+                und außerhalb der Fakultät.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col items-center md:flex-row items-start p-5 bg-white shadow-lg rounded-lg dark:bg-gray-800">
-          <img
-            class="w-64 h-80 mb-4 md:mb-0 md:mr-6 object-cover"
-            src="/assets/kungel.jpg"
-            alt="Profile Picture"
-          />
-          <div class="text-left">
-            <h2 class="dark:text-violet-400 font-bold">Kevin Kunkel</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-bold">M.Sc. Informatik</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Prüfungsausschuss (stellv.)</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Vernetzungs-Botschafter</p>
-            <p class="text-gray-600 dark:text-gray-400 italic">Hackspace</p>
-            <p>
-              Revolution durch Alliteration! Mit extraordinärer Schaffenskraft kämpfe ich mit meinen Ideen und Visionen für einen lebendigen FSR.
-              Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen! Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb und außerhalb der Fakultät.
-            </p>
+          <div
+            class="flex flex-col items-start items-center rounded-lg bg-white p-5 shadow-lg dark:bg-gray-800 md:flex-row"
+          >
+            <img
+              class="mb-4 h-80 w-64 object-cover md:mb-0 md:mr-6"
+              src="/assets/kungel.jpg"
+              alt="Profile Picture"
+            />
+            <div class="text-left">
+              <h2 class="font-bold dark:text-violet-400">Kevin Kunkel</h2>
+              <p class="font-bold text-gray-600 dark:text-gray-400">
+                M.Sc. Informatik
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Prüfungsausschuss (stellv.)
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Vernetzungs-Botschafter
+              </p>
+              <p class="italic text-gray-600 dark:text-gray-400">Hackspace</p>
+              <p>
+                Revolution durch Alliteration! Mit extraordinärer Schaffenskraft
+                kämpfe ich mit meinen Ideen und Visionen für einen lebendigen
+                FSR. Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen!
+                Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb
+                und außerhalb der Fakultät.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col items-center md:flex-row items-start p-5 bg-white shadow-lg rounded-lg dark:bg-gray-800">
-          <img
-            class="w-64 h-80 mb-4 md:mb-0 md:mr-6 object-cover"
-            src="/assets/kungel.jpg"
-            alt="Profile Picture"
-          />
-          <div class="text-left">
-            <h2 class="dark:text-violet-400 font-bold">Kevin Kunkel</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-bold">M.Sc. Informatik</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Prüfungsausschuss (stellv.)</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Vernetzungs-Botschafter</p>
-            <p class="text-gray-600 dark:text-gray-400 italic">Hackspace</p>
-            <p>
-              Revolution durch Alliteration! Mit extraordinärer Schaffenskraft kämpfe ich mit meinen Ideen und Visionen für einen lebendigen FSR.
-              Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen! Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb und außerhalb der Fakultät.
-            </p>
+          <div
+            class="flex flex-col items-start items-center rounded-lg bg-white p-5 shadow-lg dark:bg-gray-800 md:flex-row"
+          >
+            <img
+              class="mb-4 h-80 w-64 object-cover md:mb-0 md:mr-6"
+              src="/assets/kungel.jpg"
+              alt="Profile Picture"
+            />
+            <div class="text-left">
+              <h2 class="font-bold dark:text-violet-400">Kevin Kunkel</h2>
+              <p class="font-bold text-gray-600 dark:text-gray-400">
+                M.Sc. Informatik
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Prüfungsausschuss (stellv.)
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Vernetzungs-Botschafter
+              </p>
+              <p class="italic text-gray-600 dark:text-gray-400">Hackspace</p>
+              <p>
+                Revolution durch Alliteration! Mit extraordinärer Schaffenskraft
+                kämpfe ich mit meinen Ideen und Visionen für einen lebendigen
+                FSR. Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen!
+                Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb
+                und außerhalb der Fakultät.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex flex-col items-center md:flex-row items-start p-5 bg-white shadow-lg rounded-lg dark:bg-gray-800">
-          <img
-            class="w-64 h-80 mb-4 md:mb-0 md:mr-6 object-cover"
-            src="/assets/kungel.jpg"
-            alt="Profile Picture"
-          />
-          <div class="text-left">
-            <h2 class="dark:text-violet-400 font-bold">Kevin Kunkel</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-bold">M.Sc. Informatik</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Prüfungsausschuss (stellv.)</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Vernetzungs-Botschafter</p>
-            <p class="text-gray-600 dark:text-gray-400 italic">Hackspace</p>
-            <p>
-              Revolution durch Alliteration! Mit extraordinärer Schaffenskraft kämpfe ich mit meinen Ideen und Visionen für einen lebendigen FSR.
-              Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen! Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb und außerhalb der Fakultät.
-            </p>
+          <div
+            class="flex flex-col items-start items-center rounded-lg bg-white p-5 shadow-lg dark:bg-gray-800 md:flex-row"
+          >
+            <img
+              class="mb-4 h-80 w-64 object-cover md:mb-0 md:mr-6"
+              src="/assets/kungel.jpg"
+              alt="Profile Picture"
+            />
+            <div class="text-left">
+              <h2 class="font-bold dark:text-violet-400">Kevin Kunkel</h2>
+              <p class="font-bold text-gray-600 dark:text-gray-400">
+                M.Sc. Informatik
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Prüfungsausschuss (stellv.)
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Vernetzungs-Botschafter
+              </p>
+              <p class="italic text-gray-600 dark:text-gray-400">Hackspace</p>
+              <p>
+                Revolution durch Alliteration! Mit extraordinärer Schaffenskraft
+                kämpfe ich mit meinen Ideen und Visionen für einen lebendigen
+                FSR. Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen!
+                Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb
+                und außerhalb der Fakultät.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col items-center md:flex-row items-start p-5 bg-white shadow-lg rounded-lg dark:bg-gray-800">
-          <img
-            class="w-64 h-80 mb-4 md:mb-0 md:mr-6 object-cover"
-            src="/assets/kungel.jpg"
-            alt="Profile Picture"
-          />
-          <div class="text-left">
-            <h2 class="dark:text-violet-400 font-bold">Kevin Kunkel</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-bold">M.Sc. Informatik</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Prüfungsausschuss (stellv.)</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Vernetzungs-Botschafter</p>
-            <p class="text-gray-600 dark:text-gray-400 italic">Hackspace</p>
-            <p>
-              Revolution durch Alliteration! Mit extraordinärer Schaffenskraft kämpfe ich mit meinen Ideen und Visionen für einen lebendigen FSR.
-              Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen! Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb und außerhalb der Fakultät.
-            </p>
+          <div
+            class="flex flex-col items-start items-center rounded-lg bg-white p-5 shadow-lg dark:bg-gray-800 md:flex-row"
+          >
+            <img
+              class="mb-4 h-80 w-64 object-cover md:mb-0 md:mr-6"
+              src="/assets/kungel.jpg"
+              alt="Profile Picture"
+            />
+            <div class="text-left">
+              <h2 class="font-bold dark:text-violet-400">Kevin Kunkel</h2>
+              <p class="font-bold text-gray-600 dark:text-gray-400">
+                M.Sc. Informatik
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Prüfungsausschuss (stellv.)
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Vernetzungs-Botschafter
+              </p>
+              <p class="italic text-gray-600 dark:text-gray-400">Hackspace</p>
+              <p>
+                Revolution durch Alliteration! Mit extraordinärer Schaffenskraft
+                kämpfe ich mit meinen Ideen und Visionen für einen lebendigen
+                FSR. Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen!
+                Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb
+                und außerhalb der Fakultät.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col items-center md:flex-row items-start p-5 bg-white shadow-lg rounded-lg dark:bg-gray-800">
-          <img
-            class="w-64 h-80 mb-4 md:mb-0 md:mr-6 object-cover"
-            src="/assets/kungel.jpg"
-            alt="Profile Picture"
-          />
-          <div class="text-left">
-            <h2 class="dark:text-violet-400 font-bold">Kevin Kunkel</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-bold">M.Sc. Informatik</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Prüfungsausschuss (stellv.)</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-0 italic">Vernetzungs-Botschafter</p>
-            <p class="text-gray-600 dark:text-gray-400 italic">Hackspace</p>
-            <p>
-              Revolution durch Alliteration! Mit extraordinärer Schaffenskraft kämpfe ich mit meinen Ideen und Visionen für einen lebendigen FSR.
-              Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen! Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb und außerhalb der Fakultät.
-            </p>
+          <div
+            class="flex flex-col items-start items-center rounded-lg bg-white p-5 shadow-lg dark:bg-gray-800 md:flex-row"
+          >
+            <img
+              class="mb-4 h-80 w-64 object-cover md:mb-0 md:mr-6"
+              src="/assets/kungel.jpg"
+              alt="Profile Picture"
+            />
+            <div class="text-left">
+              <h2 class="font-bold dark:text-violet-400">Kevin Kunkel</h2>
+              <p class="font-bold text-gray-600 dark:text-gray-400">
+                M.Sc. Informatik
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Prüfungsausschuss (stellv.)
+              </p>
+              <p class="mb-0 italic text-gray-600 dark:text-gray-400">
+                Vernetzungs-Botschafter
+              </p>
+              <p class="italic text-gray-600 dark:text-gray-400">Hackspace</p>
+              <p>
+                Revolution durch Alliteration! Mit extraordinärer Schaffenskraft
+                kämpfe ich mit meinen Ideen und Visionen für einen lebendigen
+                FSR. Mit allen drei Stimmen den Weg ins 22. Jahrhundert wählen!
+                Als Botschafter fokussiere ich mich auf die Vernetzung innerhalb
+                und außerhalb der Fakultät.
+              </p>
+            </div>
           </div>
+          <p>
+            Dazu kommen 4 weitere kooptierte Mitglieder, die sich ebenfalls
+            motiviert einbringen, Kommissionen besetzen und Aufgaben übernehmen.
+          </p>
         </div>
-        <p>
-        Dazu kommen 4 weitere kooptierte Mitglieder, die sich ebenfalls motiviert einbringen, Kommissionen besetzen und Aufgaben übernehmen.
       </p>
-        </p>
-      </div>
-		</main>
-		<Footer />
-	</body>
+    </main>
+    <Footer />
+  </body>
 </html>

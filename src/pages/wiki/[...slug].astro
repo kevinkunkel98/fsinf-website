@@ -1,31 +1,42 @@
 ---
 // src/pages/news/[slug].astro
-import { type CollectionEntry, getCollection } from 'astro:content';
-import NewsPost from '../../layouts/BlogPost.astro';
+import { type CollectionEntry, getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
 
 // Define the getStaticPaths function
 export async function getStaticPaths() {
-  const news = await getCollection('wiki');
+  const news = await getCollection("wiki");
   return news.map((post) => ({
     params: { slug: post.slug },
     props: post,
   }));
 }
 
-type Props = CollectionEntry<'wiki'>;
+type Props = CollectionEntry<"wiki">;
 
-// Use Astro.params to get the slug
-const { slug } = Astro.params;
-const post = await getCollection('wiki').then(collection =>
-  collection.find(item => item.slug === slug)
-);
-
-if (!post) {
-  throw new Error(`Post not found for slug: ${slug}`);
-}
-
-const { Content } = await post.render();
+const wikiItem = Astro.props
+const { Content } = await wikiItem.render();
 ---
-<NewsPost {...post.data}>
-  <Content />
-</NewsPost>
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <BaseHead
+      title={wikiItem.data.title}
+      description={wikiItem.data.description}
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="relative">
+        <div class="mt-4">
+          <Content />
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>

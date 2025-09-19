@@ -5,221 +5,243 @@
  */
 
 body {
-	@apply bg-white text-black dark:bg-gray-900 dark:text-white;
+  @apply bg-white text-black dark:bg-gray-900 dark:text-white;
 
-	font-family: 'Atkinson', sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+  font-family: "Atkinson", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-size: 100% 600px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: rgb(var(--gray-dark));
 }
 
-h1, h2 {
-	@apply text-black dark:text-violet-400 font-bold text-center;
+h1,
+h2 {
+  @apply text-center font-bold text-black dark:text-violet-400;
 }
-h3, h4, h5, h6 {
-	@apply text-black dark:text-white
+h3,
+h4,
+h5,
+h6 {
+  @apply text-black dark:text-white;
 }
-a, a:hover {
-	@apply text-blue-600 dark:text-cyan-400 font-semibold;
+a,
+a:hover {
+  @apply font-semibold text-blue-600 dark:text-cyan-400;
 }
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-ul, ol {
-	margin: 0px 0px 0px 15px;
-	padding: 0px 0px 0px 15px;
-	list-style-position: outside;
+ul,
+ol {
+  margin: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 15px;
+  list-style-position: outside;
 }
 ul {
-	list-style-type: circle;
+  list-style-type: circle;
 }
 ol {
-	list-style-type: unset;
+  list-style-type: unset;
 }
 textarea {
-	width: 100%;
-	font-size: 16px;
+  width: 100%;
+  font-size: 16px;
 }
 table {
-	width: 100%;
+  width: 100%;
 }
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
-	font-size: 16px;
-	font-family: 'Courier New', Courier, monospace;
+  padding: 2px 5px;
+  background-color: rgb(var(--gray-light));
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
 }
 pre {
-	padding: 1.5em;
-	border-radius: 8px;
+  padding: 1.5em;
+  border-radius: 8px;
 }
 pre > code {
-	all: unset;
+  all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 16px;
-	font-family: 'Courier New', Courier, monospace;
-	text-align: justify;
+  border-left: 4px solid var(--accent);
+  padding: 0 0 0 20px;
+  margin: 0px;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: justify;
 }
 hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+  border: none;
+  border-top: 1px solid rgb(var(--gray-light));
 }
 
-header, footer {
-	width: 100%;
+header,
+footer {
+  width: 100%;
 }
 nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 nav a {
-	padding: 0.15em 0.5em;
-	color: var(--black);
-	border-bottom: 4px solid transparent;
-	text-decoration: none;
+  padding: 0.15em 0.5em;
+  color: var(--black);
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
 }
 nav a.active {
-	text-decoration: none;
-	border-bottom-color: var(--accent);
+  text-decoration: none;
+  border-bottom-color: var(--accent);
 }
 
 /* Phones */
 @media (max-width: 600px) {
-	body {
-		font-size: 15px;
-	}
-	main {
-		padding: 20px;
-		max-width: calc(100% - 5px);
-	}
-	h1, h2, h3, h4, h5, h6 {
-		margin: 0 0 0.5rem 0;
-		font: bold;
-	}
-	h1 {
-		font-size: 2.4em;
-	}
-	h2 {
-		margin-top: 1cm;
-		font-size: 1.9em;
-	}
-	h3 {
-		margin-top: 0.8cm;
-		font-size: 1.6em;
-	}
-	h4 {
-		margin-top: 0.6cm;
-		font-size: 1.4em;
-	}
-	strong,
-	b {
-		font-weight: 700;
-	}
-	p {
-		margin-top: 0.5cm;
-	}
-	input {
-		font-size: 15px;
-	}
-	blockquote {
-		font-size: 13px;
-		text-align: left;
-	}
+  body {
+    font-size: 15px;
+  }
+  main {
+    padding: 20px;
+    max-width: calc(100% - 5px);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 0.5rem 0;
+    font: bold;
+  }
+  h1 {
+    font-size: 2.4em;
+  }
+  h2 {
+    margin-top: 1cm;
+    font-size: 1.9em;
+  }
+  h3 {
+    margin-top: 0.8cm;
+    font-size: 1.6em;
+  }
+  h4 {
+    margin-top: 0.6cm;
+    font-size: 1.4em;
+  }
+  strong,
+  b {
+    font-weight: 700;
+  }
+  p {
+    margin-top: 0.5cm;
+  }
+  input {
+    font-size: 15px;
+  }
+  blockquote {
+    font-size: 13px;
+    text-align: left;
+  }
 }
 
 /* Tablets */
 @media (min-width: 900px) {
-	body {
-		font-size: 16px;
-	}
-	main {
-		padding: 30x;
-		margin: 2em 3em;
-		max-width: calc(100% - 30px);
-	}
-	h1, h2, h3, h4, h5, h6 {
-		margin: 0 0 0.5rem 0;
-		line-height: 1.1;
-		font: bold;
-	}
-	h1 {
-		font-size: 3.052em;
-	}
-	h2 {
-		margin-top: 1cm;
-		font-size: 2.4em;
-	}
-	h3 {
-		margin-top: 0.8cm;
-		font-size: 1.6em;
-	}
-	h4 {
-		margin-top: 0.6cm;
-		font-size: 1.563em;
-	}
-	strong,
-	b {
-		font-weight: 700;
-	}
-	p {
-		margin-top: 0.5cm;
-	}
-	blockquote {
-		font-size: 14px;
-	}
+  body {
+    font-size: 16px;
+  }
+  main {
+    padding: 30x;
+    margin: 2em 3em;
+    max-width: calc(100% - 30px);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 0.5rem 0;
+    line-height: 1.1;
+    font: bold;
+  }
+  h1 {
+    font-size: 3.052em;
+  }
+  h2 {
+    margin-top: 1cm;
+    font-size: 2.4em;
+  }
+  h3 {
+    margin-top: 0.8cm;
+    font-size: 1.6em;
+  }
+  h4 {
+    margin-top: 0.6cm;
+    font-size: 1.563em;
+  }
+  strong,
+  b {
+    font-weight: 700;
+  }
+  p {
+    margin-top: 0.5cm;
+  }
+  blockquote {
+    font-size: 14px;
+  }
 }
 
 /* Desktop */
 @media (min-width: 1200px) {
-	body {
-		font-size: 20px;
-		line-height: 1.7;
-	}
-	main {
-		width: 1000px;
-		max-width: calc(100% - 2em);
-		margin: auto;
-		padding: 2em 3em;
-	}
-	h1, h2, h3, h4, h5, h6 {
-		margin: 0 0 0.5rem 0;
-		line-height: 1.2;
-		font: bold;
-	}
-	h1 {
-		font-size: 3.052em;
-	}
-	h2 {
-		margin-top: 1cm;
-		font-size: 2.4em;
-	}
-	h3 {
-		margin-top: 0.8cm;
-		font-size: 1.6em;
-	}
-	h4 {
-		margin-top: 0.6cm;
-		font-size: 1.563em;
-	}
-	strong,
-	b {
-		font-weight: 700;
-	}
-	p {
-		margin-top: 0.5cm;
-	}
+  body {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  main {
+    width: 1000px;
+    max-width: calc(100% - 2em);
+    margin: auto;
+    padding: 2em 3em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+    font: bold;
+  }
+  h1 {
+    font-size: 3.052em;
+  }
+  h2 {
+    margin-top: 1cm;
+    font-size: 2.4em;
+  }
+  h3 {
+    margin-top: 0.8cm;
+    font-size: 1.6em;
+  }
+  h4 {
+    margin-top: 0.6cm;
+    font-size: 1.563em;
+  }
+  strong,
+  b {
+    font-weight: 700;
+  }
+  p {
+    margin-top: 0.5cm;
+  }
 }

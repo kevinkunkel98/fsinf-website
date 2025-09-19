@@ -1,165 +1,165 @@
 [
-    {
-        "title": "Fachschaftsrat",
-        "start": "2025-09-04",
-        "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
-    },
-    {
-        "title": "Fachschaftsrat",
-        "start": "2025-09-11",
-        "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
-    },
-    {
-        "title": "Fachschaftsrat",
-        "start": "2025-09-18",
-        "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
-    },
-    {
-        "title": "Fachschaftsrat",
-        "start": "2025-09-25",
-        "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
-    },
-    {
-        "title": "Fachschaftsrat",
-        "start": "2025-10-02",
-        "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
-    },
-    {
-        "title": "Propedeutikum",
-        "start": "2025-09-15T11:15:00+02:00",
-        "end": "2025-09-19T12:45:00+02:00",
-        "description": "Alle Informationen zum Propedeutikum findet ihr <a href='https://www.informatik.uni-leipzig.de/bsv/homepage/de/teaching/prop%C3%A4deutikum-informatik-wintersemester-20252026'>hier</a>.",
-        "color": "green"
-    },
-    {
-        "title": "Propedeutikum",
-        "start": "2025-09-22T11:15:00+02:00",
-        "end": "2025-09-26T12:45:00+02:00",
-        "description": "Alle Informationen zum Propedeutikum findet ihr <a href='https://www.informatik.uni-leipzig.de/bsv/homepage/de/teaching/prop%C3%A4deutikum-informatik-wintersemester-20252026'>hier</a>.",
-        "color": "green"
-    },
-    {
-        "title": "Moduleinschreibungshilfe",
-        "start": "2025-09-23T20:00:00+02:00",
-        "end": "2025-09-23T21:00:00+02:00",
-        "description": "Diese Veranstaltng wird von der Universität Leipzig veranstaltet. Ihr könnt <a href='https://www.uni-leipzig.de/veranstaltungsdetail/termin/einfuehrungsveranstaltung-zur-moduleinschreibung-an-der-fak-mathematik-und-informatik'>hier</a> die offizielle Beschreibung finden. Bei der Einführungsveranstaltung erhaltet ihr einen Überblick darüber, wie ihr euren Studienplan erstellt und man sich in die Module einschreibt. Die Veranstaltung findet als Online-Format statt. Den Link zur Veranstaltung findet ihr <a href='https://conf.fmi.uni-leipzig.de/b/fra-hxv-d9o-07f'>hier</a>.",
-        "color": "green"
-    },
-    {
-        "title": "GameJam Vorkurs 1",
-        "start": "2025-09-25T18:00:00+02:00",
-        "end": "2025-09-25T24:00:00+02:00",
-        "color": "yellow"
-    },
-    {
-        "title": "GameJam Vorkurs 2",
-        "start": "2025-09-26T18:00:00+02:00",
-        "end": "2025-09-26T24:00:00+02:00",
-        "color": "yellow"
-    },
-    {
-        "title": "Moduleinschreibung Lehramt",
-        "start": "2025-09-29",
-        "color": "green"
-    },
-    {
-        "title": "Moduleinschreibung Bachelor/Master",
-        "start": "2025-09-30",
-        "color": "green"
-    },
-    {
-        "title": "Einführungsvorlesung Bachelor",
-        "start": "2025-10-06T11:30:00+02:00",
-        "end": "2025-10-06T12:30:00+02:00",
-        "color": "green"
-    },
-    {
-        "title": "Einführungsvorlesung Lehramt",
-        "start": "2025-10-06T12:30:00+02:00",
-        "end": "2025-10-06T17:00:00+02:00",
-        "color": "green"
-    },
-    {
-        "title": "Einführungsvorlesung Master",
-        "start": "2025-10-06T17:00:00+02:00",
-        "end": "2025-10-06T18:30:00+02:00",
-        "color": "green"
-    },
-    {
-        "title": "Wandern am See in Markleeberg",
-        "start": "2025-10-07T16:00:00+02:00",
-        "end": "2025-10-07T20:30:00+02:00",
-        "description": "Wir treffen uns am Leibnitz-Denkmal im Innenhof der Universität Leipzig.",
-        "color": "green"
-    },
-    {
-        "title": "Kanufahrt",
-        "start": "2025-10-09",
-        "color": "green"
-    },
-    {
-        "title": "Erstiführung + Gemeinsames Mensen",
-        "start": "2025-10-06T12:45:00+02:00",
-        "description": "Wir treffen uns am Audimax.",
-        "color": "green"
-    },
-    {
-        "title": "Erstiführung",
-        "start": "2025-10-08T18:30:00+02:00",
-        "description": "Wir treffen uns am Audimax.",
-        "color": "green"
-    },
-    {
-        "title": "Werfwolf im Park",
-        "start": "2025-10-10T17:00:00+02:00",
-        "end": "2025-10-10T20:00:00+02:00",
-        "color": "green"
-    },
-    {
-        "title": "Spieleabend Mathe + Info",
-        "start": "2025-10-10T20:00:00+02:00",
-        "color": "orange"
-    },
-    {
-        "title": "Spätitour",
-        "start": "2025-10-08T20:00:00+02:00",
-        "description": "Wir treffen uns am Leibnitz-Denkmal im Innenhof der Universität Leipzig.",
-        "color": "green"
-    },
-    {
-        "title": "Gamejam Auswertung",
-        "start": "2025-10-09T21:00:00+02:00",
-        "color": "yellow"
-    },
-    {
-        "title": "Fahrradtour",
-        "start": "2025-10-13T17:00:00+02:00",
-        "end": "2025-10-13T19:00:00+02:00",
-        "description": "Wir treffen uns am Leibnitz-Denkmal im Innenhof der Universität Leipzig.",
-        "color": "green"
-    },
-    {
-        "title": "Erstifahrt",
-        "start": "2025-11-14T18:00:00+02:00",
-        "end": "2025-11-16T15:00:00+02:00",
-        "backgroundColor": "green"
-    },
-    {
-        "title": "Gamejam Auftaktveranstaltung",
-        "start": "2025-09-29T14:00:00+02:00",
-        "end": "2025-09-29T20:00:00+02:00",
-        "backgroundColor": "yellow"
-    },
-    {
-        "title": "Gamejam Spieldating + Pizzaessen",
-        "start": "2025-10-01T14:00:00+02:00",
-        "end": "2025-10-01T20:00:00+02:00",
-        "backgroundColor": "yellow"
-    },
-    {
-        "title": "Gamejam Fragerunde Discord",
-        "start": "2025-10-05T20:00:00+02:00",
-        "end": "2025-10-06T02:00:00+02:00",
-        "backgroundColor": "yellow"
-    }
+  {
+    "title": "Fachschaftsrat",
+    "start": "2025-09-04",
+    "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
+  },
+  {
+    "title": "Fachschaftsrat",
+    "start": "2025-09-11",
+    "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
+  },
+  {
+    "title": "Fachschaftsrat",
+    "start": "2025-09-18",
+    "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
+  },
+  {
+    "title": "Fachschaftsrat",
+    "start": "2025-09-25",
+    "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
+  },
+  {
+    "title": "Fachschaftsrat",
+    "start": "2025-10-02",
+    "description": "Die Sitzung des Fachschaftsrates findet während den Semesterferien jede Woche am Donnerstag statt."
+  },
+  {
+    "title": "Propedeutikum",
+    "start": "2025-09-15T11:15:00+02:00",
+    "end": "2025-09-19T12:45:00+02:00",
+    "description": "Alle Informationen zum Propedeutikum findet ihr <a href='https://www.informatik.uni-leipzig.de/bsv/homepage/de/teaching/prop%C3%A4deutikum-informatik-wintersemester-20252026'>hier</a>.",
+    "color": "green"
+  },
+  {
+    "title": "Propedeutikum",
+    "start": "2025-09-22T11:15:00+02:00",
+    "end": "2025-09-26T12:45:00+02:00",
+    "description": "Alle Informationen zum Propedeutikum findet ihr <a href='https://www.informatik.uni-leipzig.de/bsv/homepage/de/teaching/prop%C3%A4deutikum-informatik-wintersemester-20252026'>hier</a>.",
+    "color": "green"
+  },
+  {
+    "title": "Moduleinschreibungshilfe",
+    "start": "2025-09-23T20:00:00+02:00",
+    "end": "2025-09-23T21:00:00+02:00",
+    "description": "Diese Veranstaltng wird von der Universität Leipzig veranstaltet. Ihr könnt <a href='https://www.uni-leipzig.de/veranstaltungsdetail/termin/einfuehrungsveranstaltung-zur-moduleinschreibung-an-der-fak-mathematik-und-informatik'>hier</a> die offizielle Beschreibung finden. Bei der Einführungsveranstaltung erhaltet ihr einen Überblick darüber, wie ihr euren Studienplan erstellt und man sich in die Module einschreibt. Die Veranstaltung findet als Online-Format statt. Den Link zur Veranstaltung findet ihr <a href='https://conf.fmi.uni-leipzig.de/b/fra-hxv-d9o-07f'>hier</a>.",
+    "color": "green"
+  },
+  {
+    "title": "GameJam Vorkurs 1",
+    "start": "2025-09-25T18:00:00+02:00",
+    "end": "2025-09-25T24:00:00+02:00",
+    "color": "yellow"
+  },
+  {
+    "title": "GameJam Vorkurs 2",
+    "start": "2025-09-26T18:00:00+02:00",
+    "end": "2025-09-26T24:00:00+02:00",
+    "color": "yellow"
+  },
+  {
+    "title": "Moduleinschreibung Lehramt",
+    "start": "2025-09-29",
+    "color": "green"
+  },
+  {
+    "title": "Moduleinschreibung Bachelor/Master",
+    "start": "2025-09-30",
+    "color": "green"
+  },
+  {
+    "title": "Einführungsvorlesung Bachelor",
+    "start": "2025-10-06T11:30:00+02:00",
+    "end": "2025-10-06T12:30:00+02:00",
+    "color": "green"
+  },
+  {
+    "title": "Einführungsvorlesung Lehramt",
+    "start": "2025-10-06T12:30:00+02:00",
+    "end": "2025-10-06T17:00:00+02:00",
+    "color": "green"
+  },
+  {
+    "title": "Einführungsvorlesung Master",
+    "start": "2025-10-06T17:00:00+02:00",
+    "end": "2025-10-06T18:30:00+02:00",
+    "color": "green"
+  },
+  {
+    "title": "Wandern am See in Markleeberg",
+    "start": "2025-10-07T16:00:00+02:00",
+    "end": "2025-10-07T20:30:00+02:00",
+    "description": "Wir treffen uns am Leibnitz-Denkmal im Innenhof der Universität Leipzig.",
+    "color": "green"
+  },
+  {
+    "title": "Kanufahrt",
+    "start": "2025-10-09",
+    "color": "green"
+  },
+  {
+    "title": "Erstiführung + Gemeinsames Mensen",
+    "start": "2025-10-06T12:45:00+02:00",
+    "description": "Wir treffen uns am Audimax.",
+    "color": "green"
+  },
+  {
+    "title": "Erstiführung",
+    "start": "2025-10-08T18:30:00+02:00",
+    "description": "Wir treffen uns am Audimax.",
+    "color": "green"
+  },
+  {
+    "title": "Werfwolf im Park",
+    "start": "2025-10-10T17:00:00+02:00",
+    "end": "2025-10-10T20:00:00+02:00",
+    "color": "green"
+  },
+  {
+    "title": "Spieleabend Mathe + Info",
+    "start": "2025-10-10T20:00:00+02:00",
+    "color": "orange"
+  },
+  {
+    "title": "Spätitour",
+    "start": "2025-10-08T20:00:00+02:00",
+    "description": "Wir treffen uns am Leibnitz-Denkmal im Innenhof der Universität Leipzig.",
+    "color": "green"
+  },
+  {
+    "title": "Gamejam Auswertung",
+    "start": "2025-10-09T21:00:00+02:00",
+    "color": "yellow"
+  },
+  {
+    "title": "Fahrradtour",
+    "start": "2025-10-13T17:00:00+02:00",
+    "end": "2025-10-13T19:00:00+02:00",
+    "description": "Wir treffen uns am Leibnitz-Denkmal im Innenhof der Universität Leipzig.",
+    "color": "green"
+  },
+  {
+    "title": "Erstifahrt",
+    "start": "2025-11-14T18:00:00+02:00",
+    "end": "2025-11-16T15:00:00+02:00",
+    "backgroundColor": "green"
+  },
+  {
+    "title": "Gamejam Auftaktveranstaltung",
+    "start": "2025-09-29T14:00:00+02:00",
+    "end": "2025-09-29T20:00:00+02:00",
+    "backgroundColor": "yellow"
+  },
+  {
+    "title": "Gamejam Spieldating + Pizzaessen",
+    "start": "2025-10-01T14:00:00+02:00",
+    "end": "2025-10-01T20:00:00+02:00",
+    "backgroundColor": "yellow"
+  },
+  {
+    "title": "Gamejam Fragerunde Discord",
+    "start": "2025-10-05T20:00:00+02:00",
+    "end": "2025-10-06T02:00:00+02:00",
+    "backgroundColor": "yellow"
+  }
 ]

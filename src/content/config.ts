@@ -3,24 +3,25 @@ import { defineCollection, z } from 'astro:content';
 const wiki = defineCollection({
 	type: 'content',
 	// Type-check frontmatter using a schema
-	schema: z.object({
+	// https://stackoverflow.com/questions/76541909/dynamically-import-use-images-from-collection-markdown-with-astro-assets
+	schema: ({image}) => z.object({
 		title: z.string(),
 		description: z.string(),
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		ordinal: z.coerce.number(),
-		heroImage: z.string().optional(),
+		heroImage: image()
 	}),
 });
 
 const news = defineCollection({
 	type: 'content',
-	schema: z.object({
+	schema: ({image}) => z.object({
 		title: z.string(),
 		description: z.string(),
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
-		heroImage: z.string().optional(),
+		heroImage: image(),
 	}),
 });
 
