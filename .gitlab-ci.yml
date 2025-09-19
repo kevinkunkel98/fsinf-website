@@ -8,6 +8,8 @@ pages:
   script:
     # Specify the steps involved to build your app here
     - npm run build
+    - mv public public-old || true
+    - mv dist public
 
   artifacts:
     paths:
