@@ -1,0 +1,38 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+
+export async function getStaticPaths() {
+  const newsItems = await getCollection("protocols");
+  return newsItems.map((newsItem) => ({
+    params: { slug: newsItem.slug },
+    props: newsItem,
+  }));
+}
+
+type Props = CollectionEntry<"protocols">;
+
+const protocolItem = Astro.props;
+const { Content } = await protocolItem.render();
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article class="relative">
+        <div class="mt-4">
+          <Content />
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
