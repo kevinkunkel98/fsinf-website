@@ -1,7 +1,8 @@
 ---
 title: "Einführungswochen April 2024"
 pubDate: 2024-08-01
-heroImage: "/src/images/events/erstis.jpg"
+# heroImage: "/src/images/events/erstis.jpg"
+heroImage: "/src/images/fsinf.png"
 description: "Herzlichen Glückwunsch zum Beginn eures Masterstudiums in Informatik, Data Science und Digital Humanities! Als Fachschaftsrat möchten wir euch dabei unterstützen, euch bestmöglich in euer Studium einzuleben."
 ---
 

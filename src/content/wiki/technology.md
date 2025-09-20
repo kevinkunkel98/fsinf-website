@@ -8,17 +8,15 @@ heroImage: "/src/images/wiki/technology.png"
 
 ### GitLab
 
-Hier findest du eine [Anleitung]({{"/images/static/Gitlab-Anleitung.pdf" | relative_url}}) für das GitLab des FSR Informatik.
-
 #### Erreichbarkeit
 
 Das Git ist über deinen Browser auf https://git.fsinf.informatik.uni-leipzig.de/ erreichbar.
-Einloggen kannst du dich mit dem selben Account, mit dem du dich in den PC-Pools anmeldest. Nähere Informationen zum Informatik-Pool Account findest du unter [fakultätsinterne Arbeitsplätze](#3.).
+Einloggen kannst du dich mit dem selben Account, mit dem du dich in den PC-Pools anmeldest.
 
 #### Struktur
 
 Alle Module haben ein eigenes Repository.
-Wenn ein Modul fehlt, bei dem du gerne Material hinzufügen möchtest, dann kannst du auch diesbezüglich eine [Mail](mailto:{{ site.email }}) schreiben.
+Wenn ein Modul fehlt, bei dem du gerne Material hinzufügen möchtest, dann kannst du auch diesbezüglich eine Mail schreiben.
 Sämtliches Material wird nach Semester geordnet. Die Ordner der einzelnen Semester müssen “WiSeXX” oder “SoSeXX” heißen, wobei “XX” durch die entsprechende Jahreszahl, des Jahres, ersetzt werden muss, in dem das Semester angefangen hat.
 Als Unterordner kann es die Ordner “Uebungen”, “Skript” und “Klausuren" geben. Diese Bezeichnungen sprechen für sich selbst.
 

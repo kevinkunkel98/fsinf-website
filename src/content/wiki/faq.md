@@ -56,11 +56,7 @@ Uns sind Persönlichkeitsrechte sehr wichtig.
 
 ### Was ist Git?
 
-Git ist ein Versionskontrollsystem. Mehr Informationen findest du in unserer [Git-Anleitung]( {{"/images/static/Gitlab-Anleitung.pdf" | relative_url }}).
-
-### Wie bekomme ich Zugang zum GitLab?
-
-Einloggen können sich Informatik-Studierende und -Mitarbeiter_innen mit ihrem LDAP-Login der Informatik (Das ist der, der auch in den Linux-Pools gilt.) Accounts vergibt [Fabian Schmidt](https://www.informatik.uni-leipzig.de/ifi/oeffentlichkeit/zd/mitarbeiter-zd/).
+Git ist ein Versionskontrollsystem. Eine Versionsverwaltung ist ein System, das zur Erfassung von Änderungen an Dokumenten oder Dateien verwendet wird. Alle Versionen werden in einem Archiv mit Zeitstempel und Benutzerkennung gesichert und können später wiederhergestellt werden. Auf unserem GitLab werden alle Altklausuren, alte Vorlesungen, Übungen und mehr gesammelt.
 
 ### Ich habe meinen Zugang vergessen
 
@@ -122,7 +118,7 @@ Das Externe Praktikum (Modulnummer 10-201-2336), auch Betriebspraktikum genannt,
 > Methodenkompetenzen im Bereich der Informatik auch seine/ihre Selbst- und
 > Sozialkompetenzen erweitert hat.
 
-Üblicherweise sucht ihr euch also zuerst eine Firma und dann eine Betreuerin an der Uni, idealerweise aus einer fachlich verwandten [Abteilung](#faq4.2). Mit denen einigt ihr euch auf ein Thema und reicht es im Studienbüro ein, das Formular dazu findet ihr [hier](https://www.mathcs.uni-leipzig.de/studium/studienorganisation/formulare). Die Bestätigung durch den Prüfungsausschuss ist in den meisten Fällen nur Formsache. Außerdem besprecht ihr mit euerer universitären Betreuerin wie genau das Praktikum am Ende abgenommen werden soll. Üblich sind hierbei ein Vortrag und/oder ein Praktikumsbericht. Das Modul wird dann mit bestanden oder nicht bestanden bewertet, eine Note gibt es nicht. Das Formular zur Bestätigung des Praktikums findet ihr ebenfalls [hier](https://www.mathcs.uni-leipzig.de/studium/studienorganisation/formulare).
+Üblicherweise sucht ihr euch also zuerst eine Firma und dann eine Betreuerin an der Uni, idealerweise aus einer fachlich verwandten Abteilung. Mit denen einigt ihr euch auf ein Thema und reicht es im Studienbüro ein, das Formular dazu findet ihr [hier](https://www.mathcs.uni-leipzig.de/studium/studienorganisation/formulare). Die Bestätigung durch den Prüfungsausschuss ist in den meisten Fällen nur Formsache. Außerdem besprecht ihr mit euerer universitären Betreuerin wie genau das Praktikum am Ende abgenommen werden soll. Üblich sind hierbei ein Vortrag und/oder ein Praktikumsbericht. Das Modul wird dann mit bestanden oder nicht bestanden bewertet, eine Note gibt es nicht. Das Formular zur Bestätigung des Praktikums findet ihr ebenfalls [hier](https://www.mathcs.uni-leipzig.de/studium/studienorganisation/formulare).
 
 Wichtig: Es handelt sich hierbei um ein freiwilliges Praktikum und nicht um ein Pflichtpraktikum! Ist das Praktikum länger als 3 Monate steht euch daher mindestens der gesetzliche Mindestlohn zu. Und auch wenn es kürzer ist solltet ihr auf eine faire Bezahlung bestehen! Unabhängig davon ist es aus Sicht der Uni egal, ob ihr im Unternehmen dann als Praktikant:in, Werkstudent:in oder ganz anders angestellt seid. Wenn ihr schon irgendwo als Werkstudent:in arbeitet könnt ihr dort also auch ohne Änderung des Beschäftigungsverhältnisses das Praktikum machen. Je nach Einzelfall kann es auch möglich sein, ein bereits zurückliegendes Praktikum oder eine Werkstudierendentätigkeit anrechnen zu lassen. Das muss aber individuell mit dem Studienbüro besprochen werden.
 
