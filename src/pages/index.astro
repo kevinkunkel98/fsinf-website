@@ -14,7 +14,6 @@ const news = await getCollection("news");
 const sortedNews = news
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
-import Accordion from "../components/Accordion.astro";
 ---
 
 <!doctype html>
@@ -78,7 +77,6 @@ import Accordion from "../components/Accordion.astro";
         immer besuchen und eure Themen mit einbringen.
       </p>
     </main>
-    <Accordion />
     <Footer />
   </body>
 </html>
