@@ -6,13 +6,15 @@ import Footer from "../components/Footer.astro";
 import Carousel from "../components/Carousel.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
+import gamejam from "/src/images/events/gamejam.jpg";
+
 import gamejam1 from "/src/images/events/Logo.svg";
 import gamejam2 from "/src/images/events/game0.png";
 import gamejam3 from "/src/images/events/game1.png";
 ---
 
 <!doctype html>
-<html lang="en" class="bg:dark">
+<html lang="de">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
@@ -22,15 +24,17 @@ import gamejam3 from "/src/images/events/game1.png";
       <h1 class="text-center font-bold dark:text-violet-400">
         Unsere Veranstaltungen
       </h1>
-
-      <Carousel />
-
+      <Image
+        class="w-full h-[300px] rounded-lg object-cover"
+        src={gamejam}
+        alt="Das Logo von unserem letzten Gamjam Questpresso."
+      />
       <p class="mt-4 text-center">
         Wir als FSR sind gewillt euch über das Studium hinweg mit einem großen
         Angebot an Aktivitäten und Veranstaltungen zu beglücken. Hier ist eine
         kleine Fotogalerie über vergangene Events. Im <a href="/calendar"
           >Kalender</a
-        > könnt ihr alle zukünftigen Events sehen.
+        > könnt ihr aenlle zukünftigen Events sehen.
       </p>
 
       <section>
