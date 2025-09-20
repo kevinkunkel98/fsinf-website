@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+
+const protocolItems = (await getCollection("protocols")).reverse();
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <BaseHead title={`News - ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="w-100 m-auto p-4 md:w-5/6 lg:w-[960px]">
+      <section>
+        <h1>Sitzungsprotokolle</h1>
+        <ul
+          class="m-0 flex flex-col h-auto w-full grid-flow-row grid-cols-1 justify-center gap-4 pt-6 sm:grid-cols-2"
+        >
+          {
+            protocolItems.map((item) => (
+              <li>
+                <a href={`/protocols/${item.slug}/`}>Protokoll vom {item.slug.slice(0, 10)}</a>
+              </li>
+            ))
+          }
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -14,6 +14,13 @@ const wiki = defineCollection({
 	}),
 });
 
+const protocols = defineCollection({
+	type: 'content',
+	schema: z.object({
+		
+	})
+})
+
 const news = defineCollection({
 	type: 'content',
 	schema: ({image}) => z.object({
@@ -25,4 +32,4 @@ const news = defineCollection({
 	}),
 });
 
-export const collections = { wiki, news };
+export const collections = { wiki, protocols, news };
